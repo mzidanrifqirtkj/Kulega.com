@@ -1,434 +1,240 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kulega</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- custom css -->
+@extends('layouts.master')
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/utilities.css" />
-    <!-- normalize.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Boxicons CSS -->
-    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
-</head>
-<body>
+@section('konten')
 
-    <div class="page-wrapper">
-        <!-- header -->
-        <header class="header">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-content d-flex justify-content-between align-items-center">
-                        <div class="brand-and-toggler d-flex align-items-center justify-content-between">
-                            <a href="#" class="navbar-brand d-flex align-items-center">
-                                <img src="assets/images/Logo.png" alt="Kulega">
+@if (session('success'))
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <span class="bi bi-check-circle-fill" style="font-size: 1.25rem;"></span>
+    {{ session('success') }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+@endif
 
-                            </a>
-                            <button type="button" class="d-none navbar-show-btn">
-                                <i class="fas fa-bars"></i>
-                            </button>
-                        </div>
 
-                        <div class="navbar-box">
-                            <button type="button" class="navbar-hide-btn">
-                                <i class="fas fa-times"></i>
-                            </button>
-
-                            <ul class="navbar-nav d-flex align-items-center">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link text-white text-nowrap">Artikel</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link text-white text-nowrap">Tentang</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link text-white text-nowrap">Kontak</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link text-white text-nowrap">Bantuan</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="btn btn-secondary">Bergabung</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="register.html" class="btn btn-secondary">Daftar</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
+<!-- Banner Section -->
+<section id="artikel" class="artikel">
+    <div class="banner_wrapper wrapper">
+        <div class="container">
+            <div class="row align-item-center">
+                <div class="col-md-6 order-md-1 order-2">
+                    <img src="images/logowhite.png">
+                    <h1>Solusi Kesehatan Mental Anda</h1>
+                    <p>Dapatkan akses ke tes kesehatan mental dan berbagai layanan lainnya yang dirancang khusus untuk mendukung kesehatan mental Anda. Mulailah perjalanan menuju kesejahteraan mental Anda bersama Kulega hari ini!</p>
+                    <a href="#" class="main-btn mt-4  fill-btn form-control">Mulai sekarang</a>
                 </div>
-            </nav>
-
-            <div class="element-one">
-                <img src="assets/images/element-img-1.png" alt="">
-            </div>
-
-            <div class="banner">
-                <div class="container">
-                    <div class="banner-content">
-                        <div class="banner-left">
-                            <div class="content-wrapper">
-                                <img src="assets/images/Logo.png" alt="">
-                                <h1>Solusi Kesehatan Mental anda</h1>
-                                <p class="text text-white">Dapatkan akses ke tes kesehatan mental, dan layanan lainnya yang dirancang untuk mendukung kesehatan mental Anda. Mulai perjalanan kesejahteraan mental anda dengan Kulega hari!</p>
-                                <a href="#" class="btn btn-secondary">Mulai Sekarang</a>
-                            </div>
-                        </div>
-
-                        <div class="banner-right d-flex align-items-center justify-content-end">
-                            <img src="assets/images/banner.png" class="banner">
+                <div class="col-md-6 order-md-2 order-1 mb-md-0 mb-5">
+                    <div class="top-right-sec">
+                        <div class="animate-img">
+                            <img class="aimg1" src="images/banner2.png">
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- end of header -->
-
-        <main>
-            <section class="sc-services">
-                <div class="services-shape">
-                    <img src="assets/images/curve-shape-1.png" alt="">
-                </div>
-                <div class="container">
-                    <div class="services-content">
-                        <div class="title-box text-center">
-                            <div class="content-wrapper">
-                                <h3 class="title-box-name">Why Kulega?</h3>
-                                <div class="title-separator mx-auto"></div>
-
-                            </div>
-                        </div>
-
-                        <div class="services-list">
-                            <div class="services-item">
-                                <div class="item-icon">
-                                    <img src="assets/images/Ekspertisi.png" alt="service icon">
-                                </div>
-                                <h5 class="item-title fw-7">Ekspertisi Profesional</h5>
-                                <p class="text">Kami bekerja sama dengan pakar kesehatan mental yang bersertifikasi untuk memberikan layanan konsultasi terbaik. Dapatkan dukungan dan bimbingan dari para ahli di bidangnya.</p>
-                                <br>
-                                <a href="#" class="btn btn-secondary">Temui Pakar</a>
-                            </div>
-
-                            <div class="services-item">
-                                <div class="item-icon">
-                                    <img src="assets/images/Edukasi.png" alt="service icon">
-                                </div>
-                                <h5 class="item-title fw-7">Edukasi dan Kesadaran</h5>
-                                <p class="text">Kami percaya bahwa edukasi adalah kunci untuk meningkatkan kesadaran tentang kesehatan mental. Temukan artikel dan sumber belajar lainnya di platform kami.</p>
-                                <br>
-                                <a href="#" class="btn btn-secondary">Temui Kami</a>
-                            </div>
-
-                            <div class="services-item">
-                                <div class="item-icon">
-                                    <img src="assets/images/Komunitas.png" alt="service icon">
-                                </div>
-                                <h5 class="item-title fw-7">Komunitas Dukungan</h5>
-                                <p class="text">Bergabunglah dengan komunitas kami untuk berbagi pengalaman dan mendapatkan dukungan. Anda tidak sendirian dalam perjalanan kesejahteraan mental Anda.</p>
-                                <br>
-                                <a href="#" class="btn btn-secondary">Bergabung</a>
-                            </div>
-
-                            <div class="services-item">
-                                <div class="item-icon">
-                                    <img src="assets/images/Aksesbilitas.png" alt="service icon">
-                                </div>
-                                <h5 class="item-title fw-7">Aksesbilitas</h5>
-                                <p class="text">Dengan Kulega, Anda dapat mengakses layanan kesehatan mental kapan saja dan di mana saja. Platform kami tersedia melalui website, aplikasi, dan WhatsApp Bot.</p>
-                                <br>
-                                <a href="#" class="btn btn-secondary">Mulai Sekarang</a>
-                            </div>
-
-                            <div class="services-item">
-                                <div class="item-icon">
-                                    <img src="assets/images/layanan.png" alt="service icon">
-                                </div>
-                                <h5 class="item-title fw-7">Layanan Personalisasi</h5>
-                                <p class="text">Kulega menawarkan layanan yang disesuaikan dengan kebutuhan individu.. Dengan layanan yang disesuaikan, kami memastikan Anda mendapatkan dukungan yang tepat untuk kesejahteraan mental Anda.
-                                </p>
-                                <br>
-                                <br>
-                                <a href="#" class="btn btn-secondary">Join Us</a>
-                            </div>
-
-                            <div class="services-item">
-                                <div class="item-icon">
-                                    <img src="assets/images/komitmen.png" alt="service icon">
-                                </div>
-                                <h5 class="item-title fw-7">Komitmen terhadap Privasi</h5>
-                                <p class="text">Kulega memahami betapa pentingnya privasi dalam hal kesehatan mental.. Nikmati layanan kami dengan rasa aman dan nyaman, karena privasi Anda terjaga.</p>
-                                <br>
-                                <a href="#" class="btn btn-secondary">Join Us</a>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="sc-grid sc-grid-one">
-                <div class="container">
-                    <div class="grid-content d-grid align-items-center">
-                        <div class="grid-img">
-                            <img src="assets/images/Learn.png" alt="">
-                        </div>
-                        <div class="grid-text">
-                            <div class="content-wrapper text-start">
-                                <div class="title-box">
-                                    <h3 class="title-box-name text-white">Learn Our Journey to Archieve Our Brand</h3>
-                                    <div class="title-separator mx-auto"></div>
-                                </div>
-
-                                <p class="text title-box-text text-white">Write some simplified history of Kulega in this paragraph then the button below is for full history of Kulega</p>
-                                <button type="button" class="btn btn-white-outline">Tentang kami</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="sc-grid sc-grid-two">
-                <div class="container">
-                    <div class="grid-content d-grid align-items-center">
-                        <div class="grid-img">
-                            <img src="assets/images/Visi.png" alt="">
-                        </div>
-                        <div class="grid-text">
-                            <div class="content-wrapper text-start">
-                                <div class="title-box">
-                                    <h3 class="title-box-name">Vision</h3>
-                                    <div class="title-separator mx-auto"></div>
-                                </div>
-                                <p class="text title-box-text">Menjadi inspirasi dalam bidang Mental Wellness.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-content d-grid align-items-center">
-                        <div class="grid-img">
-                            <img src="assets/images/Misi.png" alt="">
-                        </div>
-                        <div class="grid-text">
-                            <div class="content-wrapper text-start">
-                                <div class="title-box">
-                                    <h3 class="title-box-name">Mission</h3>
-                                    <div class="title-separator mx-auto"></div>
-                                </div>
-                                <p class="text title-box-text">"Mendorong sosialisasi Mental Wellness diperusahaan, Organisasi, dan Lembaga Pendidikan."</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="sc-articles">
-                <div class="articles-shape">
-                    <img src="assets/images/curve-shape-2.png" alt="">
-                </div>
-                <div class="container">
-                    <div class="articles-content">
-                        <div class="articles-element">
-                            <img src="assets/images/element-img-2.png" alt="">
-                        </div>
-                        <div class="title-box text-center">
-                            <div class="content-wrapper">
-                                <h3 class="title-box-name text-white">Bertemu dengan Anggota kami</h3>
-                                <div class="title-separator mx-auto"></div>
-                            </div>
-                        </div>
-
-                        <div class="articles-list d-flex flex-wrap justify-content-center">
-                            <article class="articles-item">
-                                <div class="item-img">
-                                    <img src="assets/images/2.png">
-                                </div>
-                                <div class="item-body">
-                                    <div class="item-title">Disease detection, check up in the laboratory</div>
-                                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, architecto.</p>
-                                    <a href="#" class="item-link text-blue d-flex align-items-baseline">
-                                        <span class="item-link-text">Read more</span>
-                                        <span class="item-link-icon">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </article>
-
-                            <article class="articles-item">
-                                <div class="item-img">
-                                    <img src="assets/images/2.png">
-                                </div>
-                                <div class="item-body">
-                                    <div class="item-title">Herbal medicines that are safe for consumption</div>
-                                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, nostrum?</p>
-                                    <a href="#" class="item-link text-blue d-flex align-items-baseline">
-                                        <span class="item-link-text">Read more</span>
-                                        <span class="item-link-icon">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </article>
-
-                            <article class="articles-item">
-                                <div class="item-img">
-                                    <img src="assets/images/2.png">
-                                </div>
-                                <div class="item-body">
-                                    <div class="item-title">Natural care for healthy facial skin</div>
-                                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel quae dicta maxime itaque hic quia.</p>
-                                    <a href="#" class="item-link text-blue d-flex align-items-baseline">
-                                        <span class="item-link-text">Read more</span>
-                                        <span class="item-link-icon">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </article>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="wrapper">
-                <h1>Frequently Asked Questions</h1>
-
-                <div class="faq">
-                    <button class="accordion">
-                        Apa itu Kulega?
-                        <i class="fa-solid fa-chevron-down"> </i>
-                    </button>
-                    <div class="pannel">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse vitae illo facere, optio fugiat assumenda vero placeat facilis.</p>
-                    </div>
-                </div>
-                <div class="faq">
-                    <button class="accordion">
-                        Bagaimana cara kerja Kulega?
-                        <i class="fa-solid fa-chevron-down"> </i>
-                    </button>
-                    <div class="pannel">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse vitae illo facere, optio fugiat assumenda vero placeat facilis.</p>
-                    </div>
-                </div>
-                <div class="faq">
-                    <button class="accordion">
-                        Apakah layanan Kulega tersedia setiap saat?
-                        <i class="fa-solid fa-chevron-down"> </i>
-                    </button>
-                    <div class="pannel">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse vitae illo facere, optio fugiat assumenda vero placeat facilis.</p>
-                    </div>
-                </div>
-                <div class="faq">
-                    <button class="accordion">
-                        Bagaimana cara bergabung dengan komunitas Kulega?
-                        <i class="fa-solid fa-chevron-down"> </i>
-                    </button>
-                    <div class="pannel">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse vitae illo facere, optio fugiat assumenda vero placeat facilis.</p>
-                    </div>
-                </div>
-            </div>
-
-            <section class="sc-feedback">
-                <div class="container">
-                    <div class="feedback-content">
-                        <div class="feedback-element">
-
-                        </div>
-                        <div class="feedback-element-2">
-
-                        </div>
-                        <div class="title-box text-center">
-                            <div class="content-wrapper">
-                                <h3 class="title-box-name text-white">Subtitle<br>Join Our Community</h3>
-                                <div class="title-separator mx-auto"></div>
-                                <div class="d-flex align-items-center justify-content-center services-main-btn">
-                                    <a href="#" class="btn btn-secondary">Join Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col">
-                    <img src="assets/images/Logo.png" class="logo">
-
-                </div>
-                <div class="col">
-                    <h3>Office <div class="underline"><span></span></div>
-                    </h3>
-                    <ul>
-                        <li><a href="Home">Support</a></li>
-                        <li><a href="Service">Privacy Policy</a></li>
-                        <li><a href="About">Account</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h3>links <div class="underline"><span></span></div>
-                    </h3>
-                    <ul>
-                        <li><a href="Home">Support</a></li>
-                        <li><a href="Service">Privacy Policy</a></li>
-                        <li><a href="About">Account</a></li>
-
-                    </ul>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h3>NewsLetter <div class="underline"><span></span></div>
-                    </h3>
-                    <form>
-                        <i class="fa fa-envelope"></i>
-                        <input type="email" placeholder="Masukkan email anda" required>
-                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
-                    </form>
-                    <h1>Connect With Us</h1>
-                    <div class="social-icons">
-                        <i class="fab fa-youtube"></i>
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <p class="Copyright">Kulega@ 2024. All rights reserved.</p>
-        </footer>
-        <!-- end of Footer -->
+        </div>
     </div>
+</section>
+<!-- Banner Section exit-->
 
+<!-- Service section -->
+<section id="service" class="service_wrapper wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center mb-5">
+                <h3 class="text-black">Why Kulega?</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card rounded-3">
+                    <div class="service-img">
+                        <img src="images/Ekspertisi.png" class="img-fluid">
+                    </div>
+                    <div class="service-info pt-4 text-center">
+                        <h5>Ekspertisi profesional</h5>
+                        <p>Kami bekerja sama dengan pakar kesehatan mental yang bersertifikasi untuk memberikan layanan konsultasi terbaik.</p>
+                        <a href="#" class="main-btn mt-4 form-control">Temui Pakar Kami</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card rounded-3">
+                    <div class="service-img">
+                        <img src="images/Edukasi.png" class="img-fluid">
+                    </div>
+                    <div class="service-info pt-4 text-center">
+                        <h5>Edukasi dan Kesadaran</h5>
+                        <p>Temukan berbagai artikel dan sumber belajar lainnya di platform kami.</p>
+                        <br>
+                        <a href="#" class="main-btn mt-4 form-control">Baca Artikel</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card rounded-3">
+                    <div class="service-img">
+                        <img src="images/Komunitas.png" class="img-fluid">
+                    </div>
+                    <div class="service-info pt-4 text-center">
+                        <h5>Komunitas Dukungan</h5>
+                        <p>Berbagi pengalaman dan dapatkan dukungan untuk Anda. Anda tidak sendirian dalam perjalanan kesejahteraan mental Anda.</p>
+                        <a href="#" class="main-btn mt-4 form-control">Bergabung Komunitas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card rounded-3">
+                    <div class="service-img">
+                        <img src="images/Aksesbilitas.png" class="img-fluid">
+                    </div>
+                    <div class="service-info pt-4 text-center">
+                        <h5>Aksesbilitas</h5>
+                        <p>Dapatkan akses layanan kesehatan mental kapan saja dan di mana saja. Kami tersedia melalui website, aplikasi, dan WhatsApp Bot.</p>
+                        <a href="#" class="main-btn mt-4 form-control">Jelajahi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card rounded-3">
+                    <div class="service-img">
+                        <img src="images/layanan.png" class="img-fluid">
+                    </div>
+                    <div class="service-info pt-4 text-center">
+                        <h5>Layanan Personalisasi</h5>
+                        <p>Kami memastikan Anda mendapatkan dukungan yang tepat untuk kesejahteraan mental Anda.</p>
+                        <a href="#" class="main-btn mt-4 form-control">Jelajahi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card rounded-3">
+                    <div class="service-img">
+                        <img src="images/komitmen.png" class="img-fluid">
+                    </div>
+                    <div class="service-info pt-4 text-center">
+                        <h5>Komitmen terhadap Privasi</h5>
+                        <p>Nikmati layanan kami dengan rasa aman dan nyaman, karena privasi Anda terjaga.</p>
+                        <br>
+                        <a href="#" class="main-btn mt-4 form-control">Jelajahi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Service section exit -->
 
+<!-- About section-->
+<Section id="about" class="about_wrapper wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center mb-5">
+                <h3 class="text-black">Who Kulega?</h3>
+            </div>
+            <div class="col-md-6 mb-mb-0 mb-5">
+                <div class="position-relative">
+                    <img src="images/Learn.png" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-md-start">
+                <h2>Temukan Perjalanan Kami Membangun Merek</h2>
+                <p>Ikuti jejak langkah Kulega dalam membentuk identitas dan bertransformasi menjadi platform kesehatan mental terdepan. </p>
+                <a href="#" class="main-btn mt-4 form-control">Jelajahi</a>
+            </div>
+        </div>
+    </div>
+</Section>
+<!-- About section exit-->
 
+<!-- Testimonial section -->
+<section id="testi" class="testi_wrapper wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center mb-5">
+                <h3 class="text-black">Testimonial</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card p-0 border-0 rounded-0">
+                    <img src="images/testimoni.png">
+                    <div class="testi-content">
+                        <h5 class="text-black mb-4 text-center">Optimalisasi Kesejahteraan Mental di Tempat Kerja: Solusi Inovatif untuk Mengatasi Stres</h5>
+                        <br>
+                        <br>
+                        <p class="mt-2 text-black text-center">Dalam lingkungan kerja modern yang dinamis dan menuntut, memahami dan mengatasi stres serta trauma kerja menjadi prioritas utama. Optimalisasi Kesejahteraan Mental di Tempat Kerja: Solusi Inovatif untuk Mengatasi Stres adalah topik yang relevan dan penting untuk ditelusuri lebih lanjut.
+                        </p>
+                        <a href="#" class="main-btn mt-2 form-control">Baca Lebih Lanjut</a>
 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card p-0 border-0 rounded-0">
+                    <img src="images/testimoni2.png">
+                    <div class="testi-content">
+                        <h5 class="text-black mb-4 text-center">Mindfulness untuk Produktivitas: Menggunakan Teknik Kesadaran Penuh untuk Meningkatkan Kesejahteraan Mental di Tempat Kerja</h5>
+                        <p class="mt-2 text-black text-center">Di era kerja modern yang semakin menuntut, teknik kesadaran penuh atau Mindfulness telah menjadi alat penting untuk meningkatkan produktivitas dan kesejahteraan mental di tempat kerja. Artikel ini akan membahas bagaimana teknik ini dapat diterapkan dalam konteks kerja.
+                        </p>
+                        <a href="#" class="main-btn mt-2 form-control">Baca Lebih Lanjut</a>
 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card p-0 border-0 rounded-0">
+                    <img src="images/testimoni3.png">
+                    <div class="testi-content">
+                        <h5 class="text-black mb-4 text-center">Meningkatkan Kesejahteraan Mental Melalui Manajemen Tugas: Menerapkan Matriks Eisenhower di Tempat Kerja
+                        </h5>
+                        <p class="mt-2 text-black text-center">Dalam dunia kerja yang semakin kompleks dan menuntut, manajemen tugas yang efektif menjadi kunci untuk menjaga kesejahteraan mental. Salah satu metode yang telah terbukti efektif adalah penerapan Matriks Eisenhower. Artikel ini akan membahas bagaimana Meningkatkan Kesejahteraan Mental Melalui Manajemen Tugas: Menerapkan Matriks Eisenhower di Tempat Kerja.
+                        </p>
+                        <a href="#" class="main-btn mt-2 form-control">Baca Lebih Lanjut</a>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonial section exit -->
 
-
-    <!-- jquery cdn -->
-    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-    <!-- owl carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- custom js -->
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
+<!-- FAQ section -->
+<section id="faq" class="faq_wrapper wrapper">
+    <h4 class="my-5 text-center">Frequently Asked Questions</h4>
+    <div class="container">
+        <div class="accordion accordion-flush w-75 mx-auto" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Apa itu Kulega?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Bagaimana cara kerja Kulega?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Apakah layanan Kulega tersedia setiap saat?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ section exit -->
+@endsection
