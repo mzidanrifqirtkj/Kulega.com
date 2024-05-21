@@ -192,7 +192,7 @@ p {
 
 /* Regis */
 .main {
-  background-color: var(--bg-yellow);
+  background-color: #90b8ea;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -222,10 +222,14 @@ p {
   border-radius: 0px 10px 10px 0px;
 }
 .register-btn {
-  background-color: var(--bg-yellow);
+  background-color: var(--bg-green);
   border: none;
   border-radius: 10px;
   color: var(--text-white);
+}
+.register-btn:hover {
+    background-color: var(--bg-white);
+    color: var(--text-black);
 }
 
 /* Footer */

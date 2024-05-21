@@ -22,11 +22,16 @@ Route::redirect('/', '/index');
 Route::get('/index', [HomeController::class, 'index'])->name('index');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/kontak', [HomeController::class, 'kontak'])->name('kontak');
+Route::get('/artikel', [HomeController::class, 'artikel'])->name('artikel');
+
+// auth sementara
+Route::get('/beta-registration', [RegisterController::class, 'beta_regis'])->name('beta_regis');
+Route::post('/beta-registration', [RegisterController::class, 'beta_registrasi'])->name('beta_registrasi');;
 
 // auth
-Route::get('/regis', [HomeController::class, 'registrasi'])->name('regis');
-Route::get('/register', [RegisterController::class, 'showRegister'])->name('register');
-Route::post('/register', [RegisterController::class, 'register']);
+// Route::get('/regis', [HomeController::class, 'registrasi'])->name('regis');
+Route::get('/regis', [RegisterController::class, 'showRegister'])->name('regis');
+Route::post('/regis', [RegisterController::class, 'register']);
 
 // Route::get('/home', [HomeController::class, 'home'])->name('home');
 // Route::post('profile', [ProfileController::class, 'update'])->name('profile.update');

@@ -11,6 +11,11 @@ class HomeController extends Controller
         return view('index');
     }
 
+    public function artikel()
+    {
+        return view('artikel');
+    }
+
     public function about()
     {
         return view('about');
@@ -25,4 +30,9 @@ class HomeController extends Controller
     {
         return view('regis');
     }
+
+    // public function beta_regis()
+    // {
+    //     return view('beta-registration');
+    // }
 }

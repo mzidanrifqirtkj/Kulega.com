@@ -20,7 +20,7 @@
                     <img src="images/logowhite.png">
                     <h1>Solusi Kesehatan Mental Anda</h1>
                     <p>Dapatkan akses ke tes kesehatan mental dan berbagai layanan lainnya yang dirancang khusus untuk mendukung kesehatan mental Anda. Mulailah perjalanan menuju kesejahteraan mental Anda bersama Kulega hari ini!</p>
-                    <a href="#" class="main-btn mt-4  fill-btn form-control">Mulai sekarang</a>
+                    <a href="{{route('beta_regis')}}" class="main-btn mt-4  fill-btn form-control">Mulai sekarang</a>
                 </div>
                 <div class="col-md-6 order-md-2 order-1 mb-md-0 mb-5">
                     <div class="top-right-sec">
