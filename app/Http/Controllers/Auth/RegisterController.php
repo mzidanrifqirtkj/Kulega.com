@@ -12,7 +12,7 @@ class RegisterController extends Controller
 {
     public function showRegister()
     {
-        return view('regis');
+        return view('auth.regis');
     }
 
     public function register(Request $request)
@@ -35,7 +35,7 @@ class RegisterController extends Controller
 
     public function beta_regis()
     {
-        return view('beta-registration');
+        return view('auth.beta-registration');
     }
 
     public function beta_registrasi(Request $request)
