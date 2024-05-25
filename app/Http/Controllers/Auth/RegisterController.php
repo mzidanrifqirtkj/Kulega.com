@@ -57,17 +57,17 @@ class RegisterController extends Controller
         // Hash password
         $validatedData['password'] = Hash::make($password);
 
-        User::create($validatedData);
+        $user = User::create($validatedData);
 
         // Nomor dan pesan WhatsApp
+        $message = "Selamat, perusahaan anda terdaftar sebagai calon akses beta ke #{$user['id']}"; // Pesan yang ingin dikirim
+        session()->flash('success', $message);
+
         $phone = '6287713410112'; // Ganti dengan nomor WhatsApp tujuan
-        $message = "Hello, Selamat {$validatedData['pic_name']} from {$validatedData['company_name']}. Anda telah
-        terdaftar menjadi Anggota. Silakan hubungi Admin untuk mengkonfirmasi data"; // Pesan yang ingin dikirim
         $whatsappUrl = "https://api.whatsapp.com/send?phone=$phone&text=" . urlencode($message);
 
         // Redirect ke WhatsApp
         return redirect()->away($whatsappUrl);
-
         // return redirect()->route('index')->with('success', 'Registrasi berhasil! Silakan masuk dengan akun Anda.');
     }
 }

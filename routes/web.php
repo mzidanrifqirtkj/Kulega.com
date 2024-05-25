@@ -17,9 +17,9 @@ use App\Http\Controllers\Auth\RegisterController;
 |
 */
 
-Route::redirect('/', '/index');
+Route::redirect('/', '/');
 
-Route::get('/index', [HomeController::class, 'index'])->name('index');
+Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/kontak', [HomeController::class, 'kontak'])->name('kontak');
 Route::get('/artikel', [HomeController::class, 'artikel'])->name('artikel');
