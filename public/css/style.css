@@ -191,14 +191,18 @@
 
  /* Banner */
  .banner_wrapper {
-    background-color: var(--bg-light-blue);
+    background-color: var(--bg-white);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
  }
  .banner_wrapper p {
-    max-width: 80%;
-    color: var(--text-white);
+    max-width: 100%;
+    color: var(--primary-text);
+ }
+ .banner_wrapper h1 {
+   color: var(--text-black);
+   font-size: 2.5rem;
  }
 
  .banner_wrapper .top-right-sec {
@@ -210,7 +214,24 @@
     align-items: flex-end;
     justify-content: center;
  }
+ .banner_wrapper .container .main-btn {
+   background-color: var(--bg-yellow);
+   border-color: var(--bg-yellow);
+   color: var(--text-white);
+ }
+ .banner_wrapper .container .main-btn:hover {
+   background-color: var(--bg-green);
+   border-color: var(--bg-green);
+   color: var(--text-white);
+ }
+
+ .banner_wrapper .container .img-fluid {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
  
+ /* Why */
  .service_wrapper .card {
     padding: 1.25rem;
  }

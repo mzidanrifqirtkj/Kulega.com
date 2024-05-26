@@ -43,19 +43,23 @@
                             <strong>{{ $message }}</strong>
                         </span>
                         @enderror
-                        <input type="number" name="jml_karyawan" placeholder="Jumlah Karyawan" class="form-control mb-3 @error('jml_karyawan') is-invalid @enderror" value="{{ old('jml_karyawan') }}" required>
-                        @error('jml_karyawan')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
-                        {{-- <input type="password" name="password" placeholder="Password" class="form-control mb-3 @error('password') is-invalid @enderror" required>
-                        @error('password')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror --}}
-                        {{-- <input type="password" name="password_confirmation" placeholder="Konfirmasi Password" class="form-control mb-3" required> --}}
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col"><select class="form-select mb-3">
+                                        <option>Industri Perusahaan</option>
+                                        <option>Kurang dari 10</option>
+                                    </select></div>
+                                <div class="col"><select class="form-select mb-3">
+                                        <option>Industri Perusahaan</option>
+                                        <option>Kurang dari 10</option>
+                                    </select></div>
+                            </div>
+                        </div>
+
+                        <select class="form-select mb-3">
+                            <option>Alasan Registrasi</option>
+                            <option>Kurang dari 10</option>
+                        </select>
                         <button type="submit" class="register-btn form-control mb-3">Daftar</button>
                         <div>
                             <label class="text-center"><small>Dengan mengisi formulir ini, Anda juga menyetujui <a href="#"><b>Syarat & Ketentuan</b></a> kami serta <a href="#"><b>Kebijakan Privasi</b></a> Anda</small></label>

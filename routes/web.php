@@ -25,8 +25,9 @@ Route::get('/kontak', [HomeController::class, 'kontak'])->name('kontak');
 Route::get('/artikel', [HomeController::class, 'artikel'])->name('artikel');
 
 // auth sementara
-Route::get('/beta-registration', [RegisterController::class, 'beta_regis'])->name('beta_regis');
-Route::post('/beta-registration', [RegisterController::class, 'beta_registrasi'])->name('beta_registrasi');;
+Route::get('/beta-registration', [RegisterController::class, 'beta_regis'])->name('beta-registrasi');
+Route::post('/beta-registration', [RegisterController::class, 'beta_registrasi'])->name('beta_registrasi');
+Route::get('/success', [RegisterController::class, 'success_input'])->name('success');
 
 // auth
 // Route::get('/regis', [HomeController::class, 'registrasi'])->name('regis');

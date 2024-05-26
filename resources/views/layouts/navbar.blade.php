@@ -22,9 +22,15 @@
                      <li class="nav-item">
                          <a class="nav-link" href="{{url('help')}}">Bantuan</a>
                      </li>
+                     <li class="nav-item">
+                         <a href="{{route('beta_registrasi')}}" class="btn btn-primary btn-sm">Coba Kulega Sekarang</a>
+                     </li>
                  </ul>
              </div>
          </div>
      </nav>
+     <div class="bg-success text-white py-2 text-center">
+         <small>Hubungi Kami di Nomor +62 8888 9999</small>
+     </div>s
  </header>
  <!-- Navbar Section exit -->

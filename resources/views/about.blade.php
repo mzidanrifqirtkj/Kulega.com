@@ -48,53 +48,6 @@
 </section>
 <!-- Visi & Misi section exit -->
 
-<!-- Anggota section -->
-<section id="testi" class="testi_wrapper wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center mb-5">
-                <h3 class="text-black">Bertemu Anggota Kami</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card p-0 border-0 rounded-0">
-                    <img src="images/anggota1.png">
-                    <div class="testi-content">
-                        <h5 class="text-black mb-4 text-center">Nama Anggota</h5>
-                        <h6 class="text-black text-center">by featured Client</h6>
-                        <p class="mt-2 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card p-0 border-0 rounded-0">
-                    <img src="images/anggota2.png">
-                    <div class="testi-content">
-                        <h5 class="text-black mb-4 text-center">Nama Anggota</h5>
-                        <h6 class="text-black text-center">by featured Client</h6>
-                        <p class="mt-2 text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card p-0 border-0 rounded-0">
-                    <img src="images/anggota3.png">
-                    <div class="testi-content">
-                        <h5 class="text-black mb-4 text-center">Nama Anggota</h5>
-                        <h6 class="text-black text-center">by featured Client</h6>
-                        <p class="mt-2 text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Anggota section exit -->
-
 <!-- About section-->
 <Section id="about" class="about_wrapper wrapper">
     <div class="container">
@@ -116,4 +69,175 @@
     </div>
 </Section>
 <!-- About section exit-->
+
+<!-- Anggota section -->
+<section id="testi" class="testi_wrapper wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center mb-5">
+                <h3 class="text-black">Bertemu Anggota Kami</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="images/anggota1.png">
+                    <div class="testi-content">
+                        <h5 class="text-blue mb-4 text-center">Nama Anggota <a href="#"><i class="far fa-comment-dots text-black"></i></a></h5>
+                        <p class="text-black text-center">Jabatan Anggota</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="images/anggota2.png">
+                    <div class="testi-content">
+                        <h5 class="text-blue mb-4 text-center">Nama Anggota <a href="#"><i class="far fa-comment-dots text-black"></i></a></h5>
+                        <p class="text-black text-center">Jabatan Anggota</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="images/anggota3.png">
+                    <div class="testi-content">
+                        <h5 class="text-blue mb-4 text-center">Nama Anggota <a href="#"><i class="far fa-comment-dots text-black"></i></a></h5>
+                        <p class="text-black text-center">Jabatan Anggota</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="images/anggota3.png">
+                    <div class="testi-content">
+                        <h5 class="text-blue mb-4 text-center">Nama Anggota <a href="#"><i class="far fa-comment-dots text-black"></i></a></h5>
+                        <p class="text-black text-center">Jabatan Anggota</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="images/anggota3.png">
+                    <div class="testi-content">
+                        <h5 class="text-blue mb-4 text-center">Nama Anggota <a href="#"><i class="far fa-comment-dots text-black"></i></a></h5>
+                        <p class="text-black text-center">Jabatan Anggota</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="images/anggota3.png">
+                    <div class="testi-content">
+                        <h5 class="text-blue mb-4 text-center">Nama Anggota <a href="#"><i class="far fa-comment-dots text-black"></i></a></h5>
+                        <p class="text-black text-center">Jabatan Anggota</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center mt-5 mb-5"></h1>
+        <div class="row">
+            <div class="col-md-4 team-card">
+                <div class="card">
+                    <img src="images/anggota1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nama Anggota <a href="#"><i class="far fa-comment-dots text-black"></i></a></h5>
+                        <p class="card-text">Jabatan Anggota</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 team-card">
+                <div class="card">
+                    <img src="images/anggota1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nama Anggota <a href="#"><i class="far fa-comment-dots text-black"></i></a></h5>
+                        <p class="card-text">Jabatan Anggota</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 team-card">
+                <div class="card">
+                    <img src="images/anggota1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nama Anggota <a href="#"><i class="far fa-comment-dots text-black"></i></a></h5>
+                        <p class="card-text">Jabatan Anggota</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 team-card">
+                <div class="card">
+                    <img src="images/anggota1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nama Anggota <a href="#"><i class="far fa-comment-dots text-black"></i></a></h5>
+                        <p class="card-text">Jabatan Anggota</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 team-card">
+                <div class="card">
+                    <img src="images/anggota1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nama Anggota <a href="#"><i class="far fa-comment-dots text-black"></i></a></h5>
+                        <p class="card-text">Jabatan Anggota</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 team-card">
+                <div class="card">
+                    <img src="images/anggota1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nama Anggota <a href="#"><i class="far fa-comment-dots text-black"></i></a></h5>
+                        <p class="card-text">Jabatan Anggota</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <img src="images/anggota2.png" class="card-img-top" alt="Member 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nama Anggota</h5>
+                        <p class="card-text">Jabatan Anggota</p>
+                        <a href="#" class="btn btn-outline-primary rounded-circle"><i class="bi bi-chat-dots"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <img src="images/anggota2.png" class="card-img-top" alt="Member 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nama Anggota</h5>
+                        <p class="card-text">Jabatan Anggota</p>
+                        <a href="#" class="btn btn-outline-primary rounded-circle"><i class="bi bi-chat-dots"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <img src="images/anggota2.png" class="card-img-top" alt="Member 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nama Anggota</h5>
+                        <p class="card-text">Jabatan Anggota</p>
+                        <a href="#" class="btn btn-outline-primary rounded-circle"><i class="bi bi-chat-dots"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <img src="images/anggota2.png" class="card-img-top" alt="Member 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nama Anggota</h5>
+                        <p class="card-text">Jabatan Anggota</p>
+                        <a href="#" class="btn btn-outline-primary rounded-circle"><i class="bi bi-chat-dots"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Anggota section exit -->
 @endsection
