@@ -57,7 +57,10 @@ class RegisterController extends Controller
         // Hash password
         $validatedData['password'] = Hash::make($password);
 
-        User::create($validatedData);
+        $user = User::create($validatedData);
+
+        $message = "Selamat, perusahaan anda terdaftar sebagai calon akses beta ke #{$user['id']}"; // Pesan yang ingin dikirim
+        session()->flash('success', $message);
 
         return redirect()->route('success')->with('success', 'Registrasi berhasil! Silakan masuk dengan akun Anda.');
     }
