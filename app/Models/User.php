@@ -23,6 +23,8 @@ class User extends Authenticatable
         'no_hp',
         'jml_karyawan',
         'password',
+        'industri',
+        'alasan'
     ];
 
     /**

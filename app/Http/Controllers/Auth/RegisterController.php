@@ -45,8 +45,10 @@ class RegisterController extends Controller
             'pic_name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'no_hp' => 'required|string|max:15',
-            'jml_karyawan' => 'required|integer',
+            'jml_karyawan' => 'required|string|max:255',
             // 'password' => 'required|string|min:8|confirmed',
+            'alasan' => 'required|string|max:255',
+            'industri' => 'required|string|max:255'
         ]);
 
         // $validatedData['password'] = Hash::make($validatedData['password']);
@@ -57,7 +59,11 @@ class RegisterController extends Controller
         // Hash password
         $validatedData['password'] = Hash::make($password);
 
-        User::create($validatedData);
+        $user = User::create($validatedData);
+
+        // $message = "Selamat, perusahaan anda terdaftar sebagai calon akses beta ke #{$user['id']}"; // Pesan yang ingin dikirim
+        // Simpan ID pengguna ke dalam sesi
+        session()->flash('id', $user->id);
 
         return redirect()->route('success')->with('success', 'Registrasi berhasil! Silakan masuk dengan akun Anda.');
     }

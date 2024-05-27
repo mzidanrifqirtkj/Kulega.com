@@ -15,11 +15,12 @@
                         <h3>Data Berhasil Diinput</h3>
                     </div>
                     <div class="card-body">
+                        @if(session('success'))
                         <div class="alert alert-success" role="alert">
-                            Data Anda telah berhasil diinput!
+                            Selamat, perusahaan anda terdaftar sebagai calon akses beta ke #{{ session('id') }}
                         </div>
+                        @endif
                         <a href="{{ route('index')}}" class="btn btn-primary">Kembali ke Halaman Utama</a>
-                        {{-- <a href="{{ url('/form') }}" class="btn btn-secondary">Input Data Baru</a> --}}
                         <a href="https://wa.me/6287713410112?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn btn-success   ">Hubungi Admin</a>
                     </div>
                 </div>
