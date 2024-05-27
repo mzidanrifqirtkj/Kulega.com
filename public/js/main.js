@@ -9,8 +9,8 @@ window.onscroll = function() {
 
 let navBar = document.querySelectorAll(".nav-link");
 let navCollapse = document.querySelector(".navbar-collapse.collapse");
-navBar.foreach(function(a){
-    a.adEventListener("click", function(){
-        navCollapse.classList.remove("show");w
+navBar.forEach(function(a){
+    a.addEventListener("click", function(){
+        navCollapse.classList.remove("show");
     })
 })
