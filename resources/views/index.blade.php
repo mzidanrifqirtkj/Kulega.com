@@ -2,15 +2,6 @@
 
 @section('konten')
 
-{{-- @if (session('success'))
-<div class="alert alert-success alert-dismissible fade show" role="alert">
-    <span class="bi bi-check-circle-fill" style="font-size: 1.25rem;"></span>
-    {{ session('success') }}
-<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-@endif --}}
-
-
 <!-- Banner Section -->
 <section id="artikel" class="artikel">
     <div class="banner_wrapper wrapper">
@@ -22,7 +13,7 @@
                     </div>
                     <h1>Solusi Kesehatan Mental Anda</h1>
                     <p>Dapatkan akses ke tes kesehatan mental dan berbagai layanan lainnya yang dirancang khusus untuk mendukung kesehatan mental Anda. Mulailah perjalanan menuju kesejahteraan mental Anda bersama Kulega hari ini!</p>
-                    <a href="{{route('beta_registrasi')}}" class="main-btn mt-4  fill-btn form-control">Mulai sekarang</a>
+                    <a href="#" class="main-btn mt-4  fill-btn form-control">Mulai sekarang</a>
                 </div>
                 <div class="col-md-6 order-md-2 order-1 mb-md-0 mb-5">
                     <div class="top-right-sec">
@@ -164,6 +155,7 @@
                         <p class="mt-2 text-black">Dalam lingkungan kerja modern yang dinamis dan menuntut, memahami dan mengatasi stres serta trauma kerja menjadi prioritas utama. Optimalisasi Kesejahteraan Mental di Tempat Kerja: Solusi Inovatif untuk Mengatasi Stres adalah topik yang relevan dan penting untuk ditelusuri lebih lanjut.
                         </p>
                         <a href="#" class="main-btn mt-2 form-control">Baca Lebih Lanjut</a>
+
                     </div>
                 </div>
             </div>
@@ -188,6 +180,7 @@
                         <p class="mt-2 text-black ">Dalam dunia kerja yang semakin kompleks dan menuntut, manajemen tugas yang efektif menjadi kunci untuk menjaga kesejahteraan mental. Salah satu metode yang telah terbukti efektif adalah penerapan Matriks Eisenhower. Artikel ini akan membahas bagaimana Meningkatkan Kesejahteraan Mental Melalui Manajemen Tugas: Menerapkan Matriks Eisenhower di Tempat Kerja.
                         </p>
                         <a href="#" class="main-btn mt-2 form-control">Baca Lebih Lanjut</a>
+
                     </div>
                 </div>
             </div>

@@ -53,25 +53,57 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col">
-                                    <select name="industri" class="form-select mb-3 @error('industri') is-invalid @enderror">
+                                    <select name="industri" class="form-select mb-3 @error('industri') is-invalid @enderror" id="industriSelect" onchange="toggleIndustriInput(this.value)">
                                         <option value="" disabled selected>Industri Perusahaan</option>
-                                        <option value="industri 1">Industri 1</option>
-                                        <option value="industri 2">Industri 2</option>
-                                        <!-- Add more options as needed -->
+                                        <option value="Teknologi Informasi">Teknologi Informasi</option>
+                                        <option value="Pendidikan">Pendidikan</option>
+                                        <option value="Kesehatan">Kesehatan</option>
+                                        <option value="Kreatif (Desain, Penulisan, Pengembangan Web)">Kreatif (Desain, Penulisan, Pengembangan Web)</option>
+                                        <option value="Manufaktur">Manufaktur</option>
+                                        <option value="Perhotelan dan Restoran">Perhotelan dan Restoran</option>
+                                        <option value="Jasa Keuangan">Jasa Keuangan</option>
+                                        <option value="Media dan Hiburan">Media dan Hiburan</option>
+                                        <option value="E-commerce">E-commerce</option>
+                                        <option value="Pariwisata">Pariwisata</option>
+                                        <option value="Konstruksi">Konstruksi</option>
+                                        <option value="Logistik dan Transportasi">Logistik dan Transportasi</option>
+                                        <option value="Properti">Properti</option>
+                                        <option value="Asuransi">Asuransi</option>
+                                        <option value="Bank">Bank</option>
+                                        <option value="Opsi Lainnya">Opsi Lainnya</option>
                                     </select>
                                     @error('industri')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                     @enderror
+                                    <input type="text" name="industri" id="industriLainnya" class="form-control mt-3 d-none" placeholder="Masukkan Industri Lainnya">
+                                    <br>
                                 </div>
+
+                                <script>
+                                    function toggleIndustriInput(value) {
+                                        const input = document.getElementById('industriLainnya');
+                                        if (value === 'Opsi Lainnya') {
+                                            input.classList.remove('d-none');
+                                            input.setAttribute('required', 'required');
+                                        } else {
+                                            input.classList.add('d-none');
+                                            input.removeAttribute('required');
+                                            input.value = '';
+                                        }
+                                    }
+
+                                </script>
 
                                 <div class="col">
                                     <select name="jml_karyawan" class="form-select mb-3 @error('jml_karyawan') is-invalid @enderror">
                                         <option value="" disabled selected>Jumlah Karyawan</option>
-                                        <option value="< 10">Kurang dari 10</option>
-                                        <option value="10-50">10-50</option>
-                                        <!-- Add more options as needed -->
+                                        <option value="1-10">1-10</option>
+                                        <option value="11-20">11-20</option>
+                                        <option value="21-50">21-50</option>
+                                        <option value="51-100">51-100</option>
+                                        <option value="101-200">101-200</option>
                                     </select>
                                     @error('jml_karyawan')
                                     <span class="invalid-feedback" role="alert">
@@ -79,16 +111,12 @@
                                     </span>
                                     @enderror
                                 </div>
+
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <select name="alasan" class="form-select mb-3 @error('alasan') is-invalid @enderror">
-                                <option value="" disabled selected>Alasan Registrasi</option>
-                                <option value="alasan 1">Alasan 1</option>
-                                <option value="alasan 2">Alasan 2</option>
-                                <!-- Add more options as needed -->
-                            </select>
+                            <textarea name="alasan" id="alasan" cols="40" rows="3" @error('alasan') is-invalid @enderror placeholder="  Alasan Registrasi"></textarea>
                             @error('alasan')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
