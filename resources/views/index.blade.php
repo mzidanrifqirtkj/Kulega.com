@@ -1,8 +1,8 @@
 @extends('layouts.master')
-<head>
+{{-- <head>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-style.css">
-</head>
+</head> --}}
 @section('konten')
 
 {{-- <a href="{{route('beta_registrasi')}}" class="main-btn mt-4 fill-btn form-control">Mulai sekarang</a> --}}
