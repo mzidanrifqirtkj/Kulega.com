@@ -48,19 +48,27 @@ class RegisterController extends Controller
             'jml_karyawan' => 'required|string|max:255',
             // 'password' => 'required|string|min:8|confirmed',
             'alasan' => 'required|string|max:255',
-            'industri' => 'required|string|max:255'
+            'industri' => 'required_without:industri_lainnya',
+            'industri_lainnya' => 'nullable|string'
         ]);
 
-        // $validatedData['password'] = Hash::make($validatedData['password']);
+        $industri = $request->input('industri') === 'Opsi Lainnya'
+            ? $request->input('industri_lainnya')
+            : $request->input('industri');
 
         // Buat kata sandi otomatis
         $password = Str::random(12); // Panjang kata sandi bisa disesuaikan
 
         // Hash password
-        $validatedData['password'] = Hash::make($password);
+        $hashedPassword = Hash::make($password);
 
-        $user = User::create($validatedData);
+        $user = array_merge($validatedData, [
+            'industri' => $industri,
+            'password' => $hashedPassword
+        ]);
 
+        // Simpan pengguna baru ke database
+        $user = User::create($user);
         // $message = "Selamat, perusahaan anda terdaftar sebagai calon akses beta ke #{$user['id']}"; // Pesan yang ingin dikirim
         // Simpan ID pengguna ke dalam sesi
         session()->flash('id', $user->id);

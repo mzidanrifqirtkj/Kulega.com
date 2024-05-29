@@ -77,8 +77,8 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                     @enderror
-                                    <input type="text" name="industri" id="industriLainnya" class="form-control mt-3 d-none" placeholder="Masukkan Industri Lainnya">
-                                    <br>
+                                    <input type="text" name="industri_lainnya" id="industriLainnya" class="form-control mt-3 d-none" placeholder="Masukkan Industri Lainnya">
+
                                 </div>
 
                                 <script>
