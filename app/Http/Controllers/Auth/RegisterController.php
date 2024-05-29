@@ -10,28 +10,28 @@ use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
-    public function showRegister()
-    {
-        return view('auth.regis');
-    }
+    // public function showRegister()
+    // {
+    //     return view('auth.regis');
+    // }
 
-    public function register(Request $request)
-    {
-        $validatedData = $request->validate([
-            'company_name' => 'required|string|max:255',
-            'pic_name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'no_hp' => 'required|string|max:15',
-            'jml_karyawan' => 'required|integer',
-            'password' => 'required|string|min:8|confirmed',
-        ]);
+    // public function register(Request $request)
+    // {
+    //     $validatedData = $request->validate([
+    //         'company_name' => 'required|string|max:255',
+    //         'pic_name' => 'required|string|max:255',
+    //         'email' => 'required|string|email|max:255|unique:users',
+    //         'no_hp' => 'required|string|max:15',
+    //         'jml_karyawan' => 'required|integer',
+    //         'password' => 'required|string|min:8|confirmed',
+    //     ]);
 
-        $validatedData['password'] = Hash::make($validatedData['password']);
+    //     $validatedData['password'] = Hash::make($validatedData['password']);
 
-        User::create($validatedData);
+    //     User::create($validatedData);
 
-        return redirect()->route('index')->with('success', 'Registrasi berhasil! Silakan masuk dengan akun Anda.');
-    }
+    //     return redirect()->route('index')->with('success', 'Registrasi berhasil! Silakan masuk dengan akun Anda.');
+    // }
 
     public function beta_regis()
     {
@@ -80,16 +80,5 @@ class RegisterController extends Controller
     {
 
         return view('auth.success');
-        // $user = User::all();
-        // // Nomor dan pesan WhatsApp
-        // $message = "Selamat, perusahaan anda terdaftar sebagai calon akses beta ke #{$user['id']}"; // Pesan yang ingin dikirim
-        // session()->flash('success', $message);
-
-        // $phone = '6287713410112'; // Ganti dengan nomor WhatsApp tujuan
-        // $whatsappUrl = "https://api.whatsapp.com/send?phone=$phone&text=" . urlencode($message);
-
-        // // Redirect ke WhatsApp
-        // return redirect()->away($whatsappUrl);
-        // // return redirect()->route('index')->with('success', 'Registrasi berhasil! Silakan masuk dengan akun Anda.');
     }
 }
