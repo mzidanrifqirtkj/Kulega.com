@@ -190,7 +190,7 @@
  }
 
  /* Banner */
- .banner_wrapper1 {
+ .banner_wrapper_style {
     background-color: var(--bg-white);
     background-repeat: no-repeat;
     background-position: center center;
