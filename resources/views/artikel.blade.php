@@ -1,5 +1,7 @@
 @extends('layouts.master')
-
+<head>
+    <link rel="stylesheet" href="css/artikel.css">
+</head>
 @section('konten')
 <!-- artikel section -->
 <main>
@@ -37,7 +39,7 @@
         </div>
     </section>
     <section class="main-container-right">
-        <h2>Baca Artikel Kulega Lain</h2>
+        <h2>Baca Artikel Dari Penulis Sama</h2>
         <article>
             <div>
                 <h2>Optimalisasi Kesejahteraan Mental di Tempat Kerja: Solusi Inovatif untuk Mengatasi Stres</h2>
@@ -45,7 +47,6 @@
                 </p>
                 <a href="#" class="main-btn mt-2">Baca Lebih Lanjut</a>
             </div>
-
         </article>
         <article>
             <div>
@@ -54,7 +55,23 @@
                 </p>
                 <a href="#" class="main-btn mt-2">Baca Lebih Lanjut</a>
             </div>
-            =
+        </article>
+        <h2>Baca Artikel Kulega Lain</h2>
+        <article>
+            <div>
+                <h2>Optimalisasi Kesejahteraan Mental di Tempat Kerja: Solusi Inovatif untuk Mengatasi Stres</h2>
+                <p>Dalam lingkungan kerja modern yang dinamis dan menuntut, memahami dan mengatasi stres serta trauma kerja menjadi prioritas utama. Optimalisasi Kesejahteraan Mental di Tempat Kerja: Solusi Inovatif untuk Mengatasi Stres adalah topik yang relevan dan penting untuk ditelusuri lebih lanjut.
+                </p>
+                <a href="#" class="main-btn mt-2">Baca Lebih Lanjut</a>
+            </div>
+        </article>
+        <article>
+            <div>
+                <h2>Mindfulness untuk Produktivitas: Menggunakan Teknik Kesadaran Penuh untuk Meningkatkan Kesejahteraan Mental di Tempat Kerja</h2>
+                <p>Di era kerja modern yang semakin menuntut, teknik kesadaran penuh atau Mindfulness telah menjadi alat penting untuk meningkatkan produktivitas dan kesejahteraan mental di tempat kerja. Artikel ini akan membahas bagaimana teknik ini dapat diterapkan dalam konteks kerja.
+                </p>
+                <a href="#" class="main-btn mt-2">Baca Lebih Lanjut</a>
+            </div>
         </article>
         <article>
             <div>
@@ -63,7 +80,6 @@
                 </p>
                 <a href="#" class="main-btn mt-2">Baca Lebih Lanjut</a>
             </div>
-
         </article>
     </section>
 </main>

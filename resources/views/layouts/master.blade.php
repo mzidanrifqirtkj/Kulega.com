@@ -31,9 +31,8 @@
     </header>
 
     {{-- @include('layouts.content-wrapper') --}}
-    <div>
-        @yield('konten')
-    </div>
+
+    @yield('konten')
 
     <footer class=" footer">
         @include('layouts.footer')
@@ -42,7 +41,7 @@
     <!-- Bootstrap 5 JS CDN Links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
 
     <!-- Custom JS Link -->
     <script src="js/main.js"></script>

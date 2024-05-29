@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div>
 
     @yield ('konten')
 </div>

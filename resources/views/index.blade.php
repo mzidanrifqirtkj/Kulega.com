@@ -1,10 +1,24 @@
 @extends('layouts.master')
-
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
 @section('konten')
+
+{{-- <a href="{{route('beta_registrasi')}}" class="main-btn mt-4 fill-btn form-control">Mulai sekarang</a> --}}
+
+{{-- @if (session('success'))
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <span class="bi bi-check-circle-fill" style="font-size: 1.25rem;"></span>
+    {{ session('success') }}
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+@endif --}}
+
 
 <!-- Banner Section -->
 <section id="artikel" class="artikel">
-    <div class="banner_wrapper wrapper">
+    <div class="banner_wrapper_style wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 order-md-1 order-2">

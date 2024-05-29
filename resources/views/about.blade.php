@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+<head>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
 @section('konten')
 <!-- Banner Section -->
 <section id="artikel" class="artikel">
@@ -53,7 +57,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center mb-5">
-                <h3 class="text-black">Jelajahi Perjalanan Kami</h3>
+                <h3 class="text-black mb-4">Jelajahi Perjalanan Kami</h3>
             </div>
             <div class="col-md-6 mb-mb-0 mb-5">
                 <div class="position-relative">

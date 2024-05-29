@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+<head>
+    <link rel="stylesheet" href="css/regis.css">
+</head>
+
 @section('konten')
 <!-- regis section-->
 <Section class="main">

@@ -30,7 +30,7 @@
          </div>
      </nav>
      <div class="bg-success text-white py-2 text-center">
-         <small>Hubungi Kami di Nomor +62 8888 9999</small>
-     </div>s
+         <small>Hubungi Kami di Nomor +62 811-8878-977</small>
+     </div>
  </header>
  <!-- Navbar Section exit -->

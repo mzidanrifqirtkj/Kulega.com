@@ -20,22 +20,23 @@
 
 {{-- Meta tags landing page --}}
 <!-- Primary Meta Tags -->
-<title>Layanan konseling dengan pakar profesional dan terpercaya</title>
-<meta name="title" content="Layanan konseling dengan pakar profesional dan terpercaya" />
-<meta name="description" content="Kulega menyediakan layanan konseling secara tatap muka dengan perawatan yang profesional untuk membantu anda mengatasi hambatan yang anda hadapi." />
+<!-- Primary Meta Tags -->
+<title>Layanan konseling dengan pakar terpercaya</title>
+<meta name="title" content="Layanan konseling dengan pakar terpercaya" />
+<meta name="description" content="Kulega menyediakan layanan konseling secara tatap muka untuk membantu anda mengatasi hambatan yang sedang anda hadapi. " />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kulega.com/" />
-<meta property="og:title" content="Layanan konseling dengan pakar profesional dan terpercaya" />
-<meta property="og:description" content="Kulega menyediakan layanan konseling secara tatap muka dengan perawatan yang profesional untuk membantu anda mengatasi hambatan yang anda hadapi." />
+<meta property="og:title" content="Layanan konseling dengan pakar terpercaya" />
+<meta property="og:description" content="Kulega menyediakan layanan konseling secara tatap muka untuk membantu anda mengatasi hambatan yang sedang anda hadapi. " />
 <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://kulega.com/" />
-<meta property="twitter:title" content="Layanan konseling dengan pakar profesional dan terpercaya" />
-<meta property="twitter:description" content="Kulega menyediakan layanan konseling secara tatap muka dengan perawatan yang profesional untuk membantu anda mengatasi hambatan yang anda hadapi." />
+<meta property="twitter:title" content="Layanan konseling dengan pakar terpercaya" />
+<meta property="twitter:description" content="Kulega menyediakan layanan konseling secara tatap muka untuk membantu anda mengatasi hambatan yang sedang anda hadapi. " />
 <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
 <!-- Meta Tags Generated with https://metatags.io -->
