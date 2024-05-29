@@ -1,9 +1,5 @@
 @extends('layouts.master')
 
-<head>
-    <link rel="stylesheet" href="css/about.css">
-</head>
-
 @section('konten')
 <!-- Banner Section -->
 <section id="artikel" class="artikel">

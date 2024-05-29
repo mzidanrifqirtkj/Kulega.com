@@ -1,7 +1,4 @@
 @extends('layouts.master')
-<head>
-    <link rel="stylesheet" href="css/artikel.css">
-</head>
 @section('konten')
 <!-- artikel section -->
 <main>
