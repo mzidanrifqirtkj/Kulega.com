@@ -21,7 +21,7 @@
                         </div>
                         @endif
                         <a href="{{ route('index')}}" class="btn btn-primary">Kembali ke Halaman Utama</a>
-                        <a href="https://wa.me/6287713410112?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn btn-success   ">Hubungi Admin</a>
+                        <a href="https://wa.me/628118878977?text=I'm%20interested%20in%20your%20car%20for%20sale" class="btn btn-success   ">Hubungi Admin</a>
                     </div>
                 </div>
             </div>
