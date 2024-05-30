@@ -68,7 +68,13 @@ class RegisterController extends Controller
         ]);
 
         // Simpan pengguna baru ke database
-        $user = User::create($user);
+        // Save the new user to the database
+        try {
+            $user = User::create($user);
+        } catch (\Exception $e) {
+            // Handle potential errors such as database errors
+            return redirect()->back()->with('error', 'Terjadi kesalahan saat menyimpan data: ' . $e->getMessage());
+        }
         // $message = "Selamat, perusahaan anda terdaftar sebagai calon akses beta ke #{$user['id']}"; // Pesan yang ingin dikirim
         // Simpan ID pengguna ke dalam sesi
         session()->flash('id', $user->id);
