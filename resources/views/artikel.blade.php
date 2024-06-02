@@ -1,4 +1,8 @@
 @extends('layouts.master')
+@push('head')
+<link rel="stylesheet" href="css/responsive-style.css">
+<link rel="stylesheet" href="css/artikel.css">
+@endpush
 @section('konten')
 <!-- artikel section -->
 <main>

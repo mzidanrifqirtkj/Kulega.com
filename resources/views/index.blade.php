@@ -1,5 +1,11 @@
 @extends('layouts.master')
+@push('head')
+<link rel="stylesheet" href="css/responsive-style.css">
+<link rel="stylesheet" href="css/style.css">
+@endpush
 @section('konten')
+
+
 
 {{-- <a href="{{route('beta_registrasi')}}" class="main-btn mt-4 fill-btn form-control">Mulai sekarang</a> --}}
 
@@ -68,7 +74,7 @@
                         <h5>Edukasi dan Kesadaran</h5>
                         <p>Temukan berbagai artikel dan sumber belajar lainnya di platform kami.</p>
                         <br>
-                        <a href="#" class="main-btn mt-4 form-control">Baca Artikel</a>
+                        <a href="{{route('artikel_list')}}" class="main-btn mt-4 form-control">Baca Artikel</a>
                     </div>
                 </div>
             </div>
@@ -87,41 +93,48 @@
             <div class="col-md-4 col-sm-6 mb-4">
                 <div class="card rounded-3">
                     <div class="service-img">
-                        <img src="images/Aksesbilitas.png" class="img-fluid">
-                    </div>
-                    <div class="service-info pt-4 text-center">
-                        <h5>Aksesbilitas</h5>
-                        <p>Dapatkan akses layanan kesehatan mental kapan saja dan di mana saja. Kami tersedia melalui website, aplikasi, dan WhatsApp Bot.</p>
-                        <a href="#" class="main-btn mt-4 form-control">Jelajahi</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="card rounded-3">
-                    <div class="service-img">
                         <img src="images/layanan.png" class="img-fluid">
                     </div>
                     <div class="service-info pt-4 text-center">
                         <h5>Layanan Personalisasi</h5>
                         <p>Kami memastikan Anda mendapatkan dukungan yang tepat untuk kesejahteraan mental Anda.</p>
-                        <a href="#" class="main-btn mt-4 form-control">Jelajahi</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-4">
                 <div class="card rounded-3">
                     <div class="service-img">
-                        <img src="images/komitmen.png" class="img-fluid">
+                        <img src="images/Aksesbilitas.png" class="img-fluid">
+                    </div>
+                    <div class="service-info pt-4 text-center">
+                        <h5>Aksesbilitas</h5>
+                        <p>Dapatkan akses layanan kesehatan mental kapan saja dan di mana saja. Kami tersedia melalui website, aplikasi, dan WhatsApp Bot.</p>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-outline-primary"><a href="#"><i class="fab fa-google-play"></i></a>PlayStore</button>
+                        <button type="button" class="btn btn-outline-primary"><a href="#"><i class="fab fa-app-store-ios"></i></a>iOSStore</button>
+                        <button type="button" class="btn btn-outline-primary"><a href="#"><i class="fas fa-globe"></i></a>WebApp</button>
+                        <button type="button" class="btn btn-outline-primary"><a href="#"><i class="fab fa-whatsapp"></i></a>WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card rounded-3">
+                    <div class="service-img">
+                        <img src="images/komitmen.png" class="img-fluid" />
                     </div>
                     <div class="service-info pt-4 text-center">
                         <h5>Komitmen terhadap Privasi</h5>
-                        <p>Nikmati layanan kami dengan rasa aman dan nyaman, karena privasi Anda terjaga.</p>
-                        <br>
-                        <a href="#" class="main-btn mt-4 form-control">Jelajahi</a>
+                        <p>
+                            Nikmati layanan kami dengan rasa aman dan nyaman, karena
+                            privasi Anda terjaga.
+                        </p>
+                        <br />
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </section>
 <!-- Service section exit -->
@@ -162,7 +175,7 @@
                     <img src="images/testimoni.png">
                     <div class="testi-content">
                         <h5 class="text-black mb-4">Optimalisasi Kesejahteraan Mental di Tempat Kerja: Solusi Inovatif untuk Mengatasi Stres</h5>
-                        <p class="mt-2 text-black">Dalam lingkungan kerja modern yang dinamis dan menuntut, memahami dan mengatasi stres serta trauma kerja menjadi prioritas utama. Optimalisasi Kesejahteraan Mental di Tempat Kerja: Solusi Inovatif untuk Mengatasi Stres adalah topik yang relevan dan penting untuk ditelusuri lebih lanjut.
+                        <p class="mt-2 text-blue">Dalam lingkungan kerja modern yang dinamis dan menuntut, memahami dan mengatasi stres serta trauma kerja menjadi prioritas utama. Optimalisasi Kesejahteraan Mental di Tempat Kerja: Solusi Inovatif untuk Mengatasi Stres adalah topik yang relevan dan penting untuk ditelusuri lebih lanjut.
                         </p>
                         <a href="#" class="main-btn mt-2 form-control">Baca Lebih Lanjut</a>
 
@@ -187,7 +200,7 @@
                     <div class="testi-content">
                         <h5 class="text-black mb-4 ">Meningkatkan Kesejahteraan Mental Melalui Manajemen Tugas: Menerapkan Matriks Eisenhower di Tempat Kerja
                         </h5>
-                        <p class="mt-2 text-black ">Dalam dunia kerja yang semakin kompleks dan menuntut, manajemen tugas yang efektif menjadi kunci untuk menjaga kesejahteraan mental. Salah satu metode yang telah terbukti efektif adalah penerapan Matriks Eisenhower. Artikel ini akan membahas bagaimana Meningkatkan Kesejahteraan Mental Melalui Manajemen Tugas: Menerapkan Matriks Eisenhower di Tempat Kerja.
+                        <p class="mt-2 text-blue ">Dalam dunia kerja yang semakin kompleks dan menuntut, manajemen tugas yang efektif menjadi kunci untuk menjaga kesejahteraan mental. Salah satu metode yang telah terbukti efektif adalah penerapan Matriks Eisenhower. Artikel ini akan membahas bagaimana Meningkatkan Kesejahteraan Mental Melalui Manajemen Tugas: Menerapkan Matriks Eisenhower di Tempat Kerja.
                         </p>
                         <a href="#" class="main-btn mt-2 form-control">Baca Lebih Lanjut</a>
 

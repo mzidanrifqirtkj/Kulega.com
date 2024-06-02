@@ -20,9 +20,11 @@ use App\Http\Controllers\Auth\RegisterController;
 // Route::redirect('/', '/');
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
-Route::get('/about', [HomeController::class, 'about'])->name('about');
-Route::get('/kontak', [HomeController::class, 'kontak'])->name('kontak');
 Route::get('/artikel', [HomeController::class, 'artikel'])->name('artikel');
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::get('/login', [HomeController::class, 'login'])->name('login');
+Route::get('/artikellist', [HomeController::class, 'artikel_list'])->name('artikel_list');
 
 // auth sementara
 Route::get('/beta-registration', [RegisterController::class, 'beta_regis'])->name('beta-registrasi');

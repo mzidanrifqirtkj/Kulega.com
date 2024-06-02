@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KULEGA</title>
+    <title>{{$title}}</title>
 
     <!-- Favicon -->
     <link rel="icon" type="" href="images/favicon/favicon.png">
@@ -13,11 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Custom File's Link -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive-style.css">
-    <link rel="stylesheet" href="css/regis.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/artikel.css">
+    @stack('head')
 
     @include('layouts.metatag')
 </head>

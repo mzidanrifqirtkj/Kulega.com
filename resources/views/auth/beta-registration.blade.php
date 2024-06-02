@@ -1,16 +1,18 @@
 @extends('layouts.master')
-
+@push('head')
+<link rel="stylesheet" href="css/responsive-style.css">
+<link rel="stylesheet" href="css/regis.css">
+@endpush
 @section('konten')
 <!-- Registration section -->
 <section class="main">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-7 col-md-12 d-flex align-items-center">
+            <div class="col-lg-7 col-md-12 d-flex justify-content-center">
                 <div class="text-center">
                     <img src="images/logoblue.png" alt="Logo">
-                    <p class="text-white text-center">
-                        Dapatkan akses ke tes kesehatan mental, dan layanan lainnya yang dirancang untuk mendukung kesehatan mental Anda. Mulai perjalanan kesejahteraan mental Anda dengan Kulega hari ini!
-                    </p>
+                    <p class="text-primary">Lindungi Karyawan Anda dengan Program Kulega</p>
+
                 </div>
             </div>
             <div class="col-lg-5 col-md-10 col-sm-12">
@@ -19,7 +21,7 @@
                         @csrf
                         <h2 class="text-center mb-4">Bergabung untuk Menjamin Kesehatan Karyawan</h2>
                         {{-- <p class="text-center mb-4">Sudah terdaftar? <a href="#"><b>Masuk ke halaman login</b></a></p> --}}
-
+                        <p class="text-center mb-4">Sudah terdaftar? <a href="{{ route('login') }}"><b>Masuk ke halaman login</b></a></p>
                         <div class="form-group">
                             <input type="text" class="form-control mb-3" id="company_name" name="company_name" placeholder="Nama Perusahaan" value="{{ old('company_name') }}" @error('company_name') is-invalid @enderror>
                             @error('company_name')
@@ -28,7 +30,7 @@
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control mb-3" id="pic_name" name="pic_name" placeholder="Nama PIC" value="{{ old('pic_name') }}" @error('pic_name') is-invalid @enderror>
+                            <input type="text" class="form-control mb-3" id="pic_name" name="pic_name" placeholder="Nama Person In Change (PIC)" value="{{ old('pic_name') }}" @error('pic_name') is-invalid @enderror>
                             @error('pic_name')
                             <div class="alert alert-danger text-danger">{{ $message }}</div>
                             @enderror
@@ -37,14 +39,14 @@
 
 
                         <div class="form-group">
-                            <input type="text" class="form-control mb-3" id="email" name="email" placeholder="Email" value="{{ old('email') }}" @error('email') is-invalid @enderror required>
+                            <input type="text" class="form-control mb-3" id="email" name="email" placeholder="Email PIC" value="{{ old('email') }}" @error('email') is-invalid @enderror required>
                             @error('email')
                             <div class="alert alert-danger text-danger">{{ $message }}</div>
                             @enderror
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control mb-3" id="no_hp" name="no_hp" placeholder="Nomor Telepon" value="{{ old('no_hp') }}" @error('no_hp') is-invalid @enderror required>
+                            <input type="text" class="form-control mb-3" id="no_hp" name="no_hp" placeholder="Nomor Telepon PIC" value="{{ old('no_hp') }}" @error('no_hp') is-invalid @enderror required>
                             @error('no_hp')
                             <div class="alert alert-danger text-danger">{{ $message }}</div>
                             @enderror
@@ -115,8 +117,20 @@
                             </div>
                         </div>
 
+                        <div class="col">
+                            <select name="alasan2" class="form-select mb-3 @error('alasan2') is-invalid @enderror">
+                                <option value="" disabled selected>Alasan Registrasi (Wajib)</option>
+                                <option value="1-10">1-10</option>
+                            </select>
+                            @error('alasan2')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
+
                         <div class="form-group">
-                            <textarea name="alasan" id="alasan" cols="40" rows="3" @error('alasan') is-invalid @enderror placeholder="  Alasan Registrasi"></textarea>
+                            <textarea name="alasan" id="alasan" cols="40" rows="3" @error('alasan') is-invalid @enderror placeholder="  Alasan Registrasi (Opsional)"></textarea>
                             @error('alasan')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>

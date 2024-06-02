@@ -20,23 +20,22 @@
 
 {{-- Meta tags landing page --}}
 <!-- Primary Meta Tags -->
-<!-- Primary Meta Tags -->
-<title>Layanan konseling dengan pakar terpercaya</title>
-<meta name="title" content="Layanan konseling dengan pakar terpercaya" />
-<meta name="description" content="Kulega menyediakan layanan konseling secara tatap muka untuk membantu anda mengatasi hambatan yang sedang anda hadapi. " />
+<title>Kulega: Layanan kesehatan mental dengan pakar terpercaya</title>
+<meta name="title" content="Kulega: Layanan kesehatan mental dengan pakar terpercaya" />
+<meta name="description" content="Dapatkan informasi lebih lanjut mengenai program kesehatan mental dan manfaatnya untuk karyawan" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kulega.com/" />
-<meta property="og:title" content="Layanan konseling dengan pakar terpercaya" />
-<meta property="og:description" content="Kulega menyediakan layanan konseling secara tatap muka untuk membantu anda mengatasi hambatan yang sedang anda hadapi. " />
+<meta property="og:title" content="Kulega: Layanan kesehatan mental dengan pakar terpercaya" />
+<meta property="og:description" content="Dapatkan informasi lebih lanjut mengenai program kesehatan mental dan manfaatnya untuk karyawan" />
 <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://kulega.com/" />
-<meta property="twitter:title" content="Layanan konseling dengan pakar terpercaya" />
-<meta property="twitter:description" content="Kulega menyediakan layanan konseling secara tatap muka untuk membantu anda mengatasi hambatan yang sedang anda hadapi. " />
+<meta property="twitter:title" content="Kulega: Layanan kesehatan mental dengan pakar terpercaya" />
+<meta property="twitter:description" content="Dapatkan informasi lebih lanjut mengenai program kesehatan mental dan manfaatnya untuk karyawan" />
 <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
 <!-- Meta Tags Generated with https://metatags.io -->
@@ -65,27 +64,27 @@
 
 {{-- Artikel 2 --}}
 <!-- Primary Meta Tags -->
-<title>Manfaat Mindfulness: Teknik Kesadaran Penuh untuk Kesejahteraan Mental</title>
-<meta name="title" content="Manfaat Mindfulness: Teknik Kesadaran Penuh untuk Kesejahteraan Mental" />
-<meta name="description" content="Cari tahu lebih lanjut bagaimana mindfulness dapat meningkatkan produktivitas dan kesejahteraan mental di lingkungan kerja" />
+<title>Apa Itu Mindfulness? Teknik Kesadaran Penuh untuk Meningkatkan Kesejahteraan Mental</title>
+<meta name="title" content="Apa Itu Mindfulness? Teknik Kesadaran Penuh untuk Meningkatkan Kesejahteraan Mental" />
+<meta name="description" content="Cari tahu lebih lanjut bagaimana pengaruh mindfulness dapat meningkatkan produktivitas dan kesejahteraan mental di lingkungan kerja" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kulega.com/" />
-<meta property="og:title" content="Manfaat Mindfulness: Teknik Kesadaran Penuh untuk Kesejahteraan Mental" />
-<meta property="og:description" content="Cari tahu lebih lanjut bagaimana mindfulness dapat meningkatkan produktivitas dan kesejahteraan mental di lingkungan kerja" />
+<meta property="og:title" content="Apa Itu Mindfulness? Teknik Kesadaran Penuh untuk Meningkatkan Kesejahteraan Mental" />
+<meta property="og:description" content="Cari tahu lebih lanjut bagaimana pengaruh mindfulness dapat meningkatkan produktivitas dan kesejahteraan mental di lingkungan kerja" />
 <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://kulega.com/" />
-<meta property="twitter:title" content="Manfaat Mindfulness: Teknik Kesadaran Penuh untuk Kesejahteraan Mental" />
-<meta property="twitter:description" content="Cari tahu lebih lanjut bagaimana mindfulness dapat meningkatkan produktivitas dan kesejahteraan mental di lingkungan kerja" />
+<meta property="twitter:title" content="Apa Itu Mindfulness? Teknik Kesadaran Penuh untuk Meningkatkan Kesejahteraan Mental" />
+<meta property="twitter:description" content="Cari tahu lebih lanjut bagaimana pengaruh mindfulness dapat meningkatkan produktivitas dan kesejahteraan mental di lingkungan kerja" />
 <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
 <!-- Meta Tags Generated with https://metatags.io -->
 
-{{-- Artikel 3 --}}
+{{-- Artikel 3  --}}
 <!-- Primary Meta Tags -->
 <title>Meningkatkan Kesejahteraan Mental: Manajemen Tugas di Tempat kerja</title>
 <meta name="title" content="Meningkatkan Kesejahteraan Mental: Manajemen Tugas di Tempat kerja" />

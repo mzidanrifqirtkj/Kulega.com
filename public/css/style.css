@@ -283,6 +283,9 @@
    border-color: var(--bg-white);
    color: var(--text-black);
  }
+ .testi_wrapper .container p {
+   color: var(--primary-text);
+ }
 
  /* Footer */
  .footer_wrapper {

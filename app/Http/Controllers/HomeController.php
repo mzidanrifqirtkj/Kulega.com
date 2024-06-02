@@ -10,27 +10,58 @@ class HomeController extends Controller
     public function index()
     {
         // Log::info('Previous URL: ' . url()->previous());
-        return view('index');
+        $data = [
+            'title' => 'Kulega',
+        ];
+        return view('index', $data);
     }
 
     public function artikel()
     {
-        return view('artikel');
+        $data = [
+            'title' => 'Artikel',
+        ];
+        return view('artikel', $data);
     }
 
     public function about()
     {
-        return view('about');
+        $data = [
+            'title' => 'About',
+        ];
+        return view('about', $data);
     }
 
-    public function kontak()
+    public function contact()
     {
-        return view('');
+        $data = [
+            'title' => 'Contact',
+        ];
+        return view('contact', $data);
     }
 
     public function registrasi()
     {
-        return view('regis');
+        $data = [
+            'title' => 'Registrasi',
+        ];
+        return view('regis', $data);
+    }
+
+    public function login()
+    {
+        $data = [
+            'title' => 'Login',
+        ];
+        return view('auth.login', $data);
+    }
+
+    public function artikel_list()
+    {
+        $data = [
+            'title' => 'Artikel List',
+        ];
+        return view('artikellist', $data);
     }
 
     // public function beta_regis()

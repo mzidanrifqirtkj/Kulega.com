@@ -35,7 +35,10 @@ class RegisterController extends Controller
 
     public function beta_regis()
     {
-        return view('auth.beta-registration');
+        $data = [
+            'title' => 'Registrasi',
+        ];
+        return view('auth.beta-registration', $data);
     }
 
     public function beta_registrasi(Request $request)
@@ -48,6 +51,7 @@ class RegisterController extends Controller
             'jml_karyawan' => 'required|string|max:255',
             // 'password' => 'required|string|min:8|confirmed',
             'alasan' => 'required|string|max:255',
+            'alasan2' => 'required|string|max:255',
             'industri' => 'required_without:industri_lainnya',
             'industri_lainnya' => 'nullable|string'
         ]);
@@ -84,8 +88,10 @@ class RegisterController extends Controller
 
     public function success_input()
     {
-
-        return view('auth.success');
+        $data = [
+            'title' => 'Success',
+        ];
+        return view('auth.success', $data);
         // $user = User::all();
         // // Nomor dan pesan WhatsApp
         // $message = "Selamat, perusahaan anda terdaftar sebagai calon akses beta ke #{$user['id']}"; // Pesan yang ingin dikirim

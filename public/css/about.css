@@ -174,7 +174,7 @@ p {
    font-family: var(--secondary-font);
 }
 .header_wrapper .nav-item .nav-link:hover,
-.header_wrapper .nav-item .nav-link:hover:focus,
+.header_wrapper .nav-item .nav-link:hover:focus, 
 .header_wrapper .nav-item .nav-link:hover.active {
    color: var(--secondary-text);
 }

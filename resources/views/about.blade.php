@@ -1,5 +1,8 @@
 @extends('layouts.master')
-
+@push('head')
+<link rel="stylesheet" href="css/responsive-style.css">
+<link rel="stylesheet" href="css/about.css">
+@endpush
 @section('konten')
 <!-- Banner Section -->
 <section id="artikel" class="artikel">
