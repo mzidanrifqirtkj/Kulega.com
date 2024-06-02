@@ -24,7 +24,8 @@ class User extends Authenticatable
         'jml_karyawan',
         'password',
         'industri',
-        'alasan'
+        'alasan',
+        'alasan2'
     ];
 
     /**

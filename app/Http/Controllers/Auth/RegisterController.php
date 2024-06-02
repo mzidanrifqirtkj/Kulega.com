@@ -51,11 +51,11 @@ class RegisterController extends Controller
             'jml_karyawan' => 'required|string|max:255',
             // 'password' => 'required|string|min:8|confirmed',
             'alasan' => 'required|string|max:255',
-            'alasan2' => 'required|string|max:255',
+            'alasan2' => 'nullable|string',
             'industri' => 'required_without:industri_lainnya',
             'industri_lainnya' => 'nullable|string'
         ]);
-
+        // dd($validatedData);
         $industri = $request->input('industri') === 'Opsi Lainnya'
             ? $request->input('industri_lainnya')
             : $request->input('industri');
