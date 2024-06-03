@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Yajra\DataTables\DataTables;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -73,7 +74,7 @@ class HomeController extends Controller
 
         if ($request->ajax()) {
             $users = User::select('*');
-            return datatables()->of($users)
+            return DataTables()->of($users)
                 ->make(true);
         }
 
