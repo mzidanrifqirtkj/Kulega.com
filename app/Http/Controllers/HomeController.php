@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
@@ -63,6 +64,23 @@ class HomeController extends Controller
         ];
         return view('artikellist', $data);
     }
+
+    public function state(Request $request)
+    {
+        $data = [
+            'title' => 'State',
+        ];
+
+        if ($request->ajax()) {
+            $users = User::select('*');
+            return datatables()->of($users)
+                ->make(true);
+        }
+
+        return view('state', $data);
+    }
+
+
 
     // public function beta_regis()
     // {

@@ -25,6 +25,7 @@ Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/login', [HomeController::class, 'login'])->name('login');
 Route::get('/artikellist', [HomeController::class, 'artikel_list'])->name('artikel_list');
+Route::get('/state', [HomeController::class, 'state'])->name('state');
 
 // auth sementara
 Route::get('/beta-registration', [RegisterController::class, 'beta_regis'])->name('beta-registrasi');
