@@ -34,7 +34,7 @@
             $('#y_dataTables').DataTable({
                 processing: true
                 , serverSide: true
-                , ajax: "{{ url('state') }}"
+                , ajax: "{{ route('state') }}"
                 , columns: [{
                         data: 'id'
                         , name: 'id'
