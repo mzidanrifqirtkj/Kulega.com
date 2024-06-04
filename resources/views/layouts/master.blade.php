@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{$title}}</title>
+    <title>{{ MetaTag::get('title') }}</title>
+
+    {!! MetaTag::tag('description') !!}
+    {!! MetaTag::tag('image') !!}
+
+    {!! MetaTag::openGraph() !!}
+
+    {!! MetaTag::twitterCard() !!}
+
+    {{--Set default share picture after custom section pictures--}}
+    {!! MetaTag::tag('image', asset('assets/landing_page.jpg')) !!}
 
     <!-- Favicon -->
     <link rel="icon" type="" href="images/favicon/favicon.png">
@@ -14,8 +24,26 @@
 
     <!-- Custom File's Link -->
     @stack('head')
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WP4JMQ8Z');
 
-    @include('layouts.metatag')
+    </script>
+    <!-- End Google Tag Manager -->
+    {{-- @include('layouts.metatag') --}}
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
     <!-- Google Tag Manager (noscript) -->

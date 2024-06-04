@@ -6,6 +6,7 @@ use Yajra\DataTables\DataTables;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Torann\LaravelMetaTags\Facades\MetaTag;
 
 class HomeController extends Controller
 {
@@ -13,8 +14,11 @@ class HomeController extends Controller
     {
         // Log::info('Previous URL: ' . url()->previous());
         $data = [
-            'title' => 'Kulega',
+            MetaTag::set('title', 'Kulega: Layanan kesehatan mental dengan pakar terpercaya'),
+            MetaTag::set('description', 'Dapatkan informasi lebih lanjut mengenai program kesehatan mental dan manfaatnya untuk karyawan'),
+            MetaTag::set('image', asset('assets/landing_page.jpg')),
         ];
+
         return view('index', $data);
     }
 

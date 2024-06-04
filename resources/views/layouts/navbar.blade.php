@@ -11,7 +11,7 @@
              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                  <ul class="navbar-nav menu-navbar-nav">
                      <li class="nav-item">
-                         <a class="nav-link active" aria-current="page" href="{{route('artikel')}}">Artikel</a>
+                         <a class="nav-link active" aria-current="page" href="{{route('artikel_list')}}">Artikel</a>
                      </li>
                      <li class="nav-item">
                          <a class="nav-link" href="{{route('about')}}">Tentang Kami</a>

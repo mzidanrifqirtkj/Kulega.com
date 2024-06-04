@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'd5e13ae9fef681ec9e6d7543b616d3f40f5bab21',
+        'reference' => '30214f9cd37222e51f7458020659efa5ac47cd86',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(
@@ -384,7 +384,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'd5e13ae9fef681ec9e6d7543b616d3f40f5bab21',
+            'reference' => '30214f9cd37222e51f7458020659efa5ac47cd86',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(
@@ -1281,6 +1281,15 @@
             'reference' => '83ee6f38df0a63106a9e4536e3060458b74ccedb',
             'type' => 'library',
             'install_path' => __DIR__ . '/../tijsverkoyen/css-to-inline-styles',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'torann/laravel-meta-tags' => array(
+            'pretty_version' => '3.0.9',
+            'version' => '3.0.9.0',
+            'reference' => 'bd6ad602c3ea05f427e5f62ea65649a6ae0be6c9',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../torann/laravel-meta-tags',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

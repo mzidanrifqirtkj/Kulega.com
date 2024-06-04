@@ -3,6 +3,10 @@
 <link rel="stylesheet" href="css/responsive-style.css">
 <link rel="stylesheet" href="css/style.css">
 @endpush
+
+@push('')
+
+@endpush
 @section('konten')
 
 

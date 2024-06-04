@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
@@ -20,12 +21,14 @@ use App\Http\Controllers\Auth\RegisterController;
 // Route::redirect('/', '/');
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
-Route::get('/artikel', [HomeController::class, 'artikel'])->name('artikel');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/login', [HomeController::class, 'login'])->name('login');
 Route::get('/artikellist', [HomeController::class, 'artikel_list'])->name('artikel_list');
 Route::get('/stat', [HomeController::class, 'stat'])->name('stat');
+
+// Artikel
+Route::get('/artikel1', [ArtikelController::class, 'artikel1'])->name('artikel1');
 
 // auth sementara
 Route::get('/beta-registration', [RegisterController::class, 'beta_regis'])->name('beta-registrasi');

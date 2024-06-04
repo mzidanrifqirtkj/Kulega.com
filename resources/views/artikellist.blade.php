@@ -69,7 +69,8 @@
                 <div class="card p-0 border-0 rounded-0">
                     <img src="images/testimoni3.png">
                     <div class="testi-content">
-                        <h5 class="text-black mb-4">Meningkatkan Kesejahteraan Mental Melalui Manajemen Tugas: Menerapkan Matriks Eisenhower di Tempat Kerja
+
+                        <h5 class="text-black mb-4"><a href="{{route('artikel1')}}">Meningkatkan Kesejahteraan Mental Melalui Manajemen Tugas: Menerapkan Matriks Eisenhower di Tempat Kerja</a>
                         </h5>
                         <p class="mt-2 text-blue"><a href="">Dalam dunia kerja yang semakin kompleks dan menuntut, manajemen tugas yang efektif menjadi kunci untuk menjaga kesejahteraan mental. Salah satu metode yang telah terbukti efektif adalah penerapan Matriks Eisenhower. Artikel ini akan membahas bagaimana Meningkatkan Kesejahteraan Mental Melalui Manajemen Tugas: Menerapkan Matriks Eisenhower di Tempat Kerja.</a>
                         </p>

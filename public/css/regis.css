@@ -205,7 +205,7 @@ p {
   border: 1px solid var(--bg-white);
 }
 .form-box input {
-  border-radius: 10px;
+  border-radius: px;
 }
 .form-box input:focus {
   box-shadow: 0 0 0;

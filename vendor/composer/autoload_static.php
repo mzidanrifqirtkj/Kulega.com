@@ -57,6 +57,7 @@ class ComposerStaticInitbfe12996eeecb6fdc8713a9fd9d431f8
         ),
         'T' => 
         array (
+            'Torann\\LaravelMetaTags\\' => 23,
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
             'Tests\\' => 6,
             'Termwind\\' => 9,
@@ -200,6 +201,10 @@ class ComposerStaticInitbfe12996eeecb6fdc8713a9fd9d431f8
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Torann\\LaravelMetaTags\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/torann/laravel-meta-tags/src/Torann/LaravelMetaTags',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -6537,6 +6542,9 @@ class ComposerStaticInitbfe12996eeecb6fdc8713a9fd9d431f8
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
+        'Torann\\LaravelMetaTags\\Facades\\MetaTag' => __DIR__ . '/..' . '/torann/laravel-meta-tags/src/Torann/LaravelMetaTags/Facades/MetaTag.php',
+        'Torann\\LaravelMetaTags\\MetaTag' => __DIR__ . '/..' . '/torann/laravel-meta-tags/src/Torann/LaravelMetaTags/MetaTag.php',
+        'Torann\\LaravelMetaTags\\MetaTagsServiceProvider' => __DIR__ . '/..' . '/torann/laravel-meta-tags/src/Torann/LaravelMetaTags/MetaTagsServiceProvider.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
