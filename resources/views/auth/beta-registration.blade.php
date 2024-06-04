@@ -117,7 +117,7 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        {{-- <div class="col">
                             <select name="alasan2" class="form-select mb-3 @error('alasan2') is-invalid @enderror">
                                 <option value="" disabled selected>Alasan Registrasi (Wajib)</option>
                                 <option value="1-10">1-10</option>
@@ -125,31 +125,31 @@
                             @error('alasan2')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
-                        </div>
+                        </span>
+                        @enderror
+                </div> --}}
 
-                        <div class="form-group">
-                            <textarea name="alasan" id="alasan" cols="40" rows="3" @error('alasan') is-invalid @enderror placeholder="  Alasan Registrasi (Opsional)"></textarea>
-                            @error('alasan')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
-                        </div>
-
-                        <button type="submit" class="register-btn form-control mb-3 btn btn-primary">Daftar</button>
-                        <div>
-                            <label class="text-center">
-                                <small>
-                                    Dengan mengisi formulir ini, Anda juga menyetujui <a href="#"><b>Syarat & Ketentuan</b></a> kami serta <a href="#"><b>Kebijakan Privasi</b></a> kami.
-                                </small>
-                            </label>
-                        </div>
-                    </form>
+                <div class="form-group form-control">
+                    <textarea name="alasan" id="alasan" cols="40" rows="3" @error('alasan') is-invalid @enderror placeholder="  Alasan Registrasi (Opsional)"></textarea>
+                    @error('alasan')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                    @enderror
                 </div>
+
+                <button type="submit" class="register-btn form-control mb-3 btn btn-primary">Daftar</button>
+                <div>
+                    <label class="text-center">
+                        <small>
+                            Dengan mengisi formulir ini, Anda juga menyetujui <a href="#"><b>Syarat & Ketentuan</b></a> kami serta <a href="#"><b>Kebijakan Privasi</b></a> kami.
+                        </small>
+                    </label>
+                </div>
+                </form>
             </div>
         </div>
+    </div>
     </div>
 </section>
 @endsection

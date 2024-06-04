@@ -66,7 +66,7 @@ class HomeController extends Controller
         return view('artikellist', $data);
     }
 
-    public function state(Request $request)
+    public function stat(Request $request)
     {
         $data = [
             'title' => 'State',
@@ -78,7 +78,7 @@ class HomeController extends Controller
                 ->make(true);
         }
 
-        return view('state', $data);
+        return view('stat', $data);
     }
 
 
