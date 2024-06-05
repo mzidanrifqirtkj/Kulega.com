@@ -17,10 +17,10 @@
                          <a class="nav-link" href="{{route('about')}}">Tentang Kami</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="{{route('contact')}}">Kontak</a>
+                         <a class="nav-link" href="{{url('help')}}">Bantuan</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="{{url('help')}}">Bantuan</a>
+                         <a class="nav-link" href="{{route('contact')}}">Kontak</a>
                      </li>
                      <li class="nav-item">
                          <a href="{{route('beta_registrasi')}}" class="btn btn-primary btn-sm">Coba Kulega Sekarang</a>

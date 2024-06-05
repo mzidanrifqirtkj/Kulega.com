@@ -183,6 +183,11 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
         Torann\LaravelMetaTags\MetaTagsServiceProvider::class,
+        Mailjet\LaravelMailjet\MailjetServiceProvider::class,
+        // Mailjet\LaravelMailjet\MailjetMailjetServiceProvider::class,
+        // \Mailjet\LaravelMailjet\Providers\ContactsServiceProvider::class,
+        // Mailjet\LaravelMailjet\MailjetMailServiceProvider::class,
+
 
         /*
          * Package Service Providers...
@@ -214,6 +219,7 @@ return [
         // 'ExampleClass' => App\Example\ExampleClass::class,
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
         'MetaTag'   => Torann\LaravelMetaTags\Facades\MetaTag::class,
+        'Mailjet' => Mailjet\LaravelMailjet\Facades\Mailjet::class,
     ])->toArray(),
 
 ];

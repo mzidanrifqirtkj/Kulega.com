@@ -23,6 +23,7 @@
                 <tr>
                     <th>Id</th>
                     <th>PIC Name</th>
+                    <th>Perusahaan</th>
                     <th>Email</th>
                     <th>Created at</th>
                 </tr>
@@ -42,6 +43,9 @@
                     , {
                         data: 'pic_name'
                         , name: 'pic_name'
+                    }, {
+                        data: 'industri'
+                        , name: 'industri'
                     }
                     , {
                         data: 'email'
