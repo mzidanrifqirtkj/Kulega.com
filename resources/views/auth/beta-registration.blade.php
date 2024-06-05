@@ -130,7 +130,7 @@
                 </div> --}}
 
                 <div class="form-group form-control">
-                    <textarea name="alasan" id="alasan" cols="40" rows="3" @error('alasan') is-invalid @enderror placeholder="  Alasan Registrasi (Opsional)"></textarea>
+                    <textarea name="alasan" id="alasan" cols="40" rows="3" @error('alasan') is-invalid @enderror placeholder="  Alasan Registrasi"></textarea>
                     @error('alasan')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
