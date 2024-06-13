@@ -70,6 +70,14 @@ class HomeController extends Controller
         return view('artikellist', $data);
     }
 
+    public function help()
+    {
+        $data = [
+            'title' => 'Bantuan',
+        ];
+        return view('help', $data);
+    }
+
     public function stat(Request $request)
     {
         $data = [

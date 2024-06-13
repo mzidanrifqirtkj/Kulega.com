@@ -77,6 +77,20 @@
     }
 }
 
+@media (max-width: 950px) {
+    .home {
+        grid-template-columns: 1fr;
+    }
+    .lists {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;  
+    }
+    .list {
+        grid-template-columns: 1fr 5fr;
+    }
+}
+
 @media (max-width: 767px) {
     /* custom css */
     .main-btn {
@@ -114,6 +128,8 @@
     }
 
 }
+
+
 @media (max-width: 500px) {
     .main-container-right article {
         grid-template-columns: 1fr 3fr;

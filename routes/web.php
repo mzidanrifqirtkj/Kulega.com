@@ -25,6 +25,7 @@ Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/login', [HomeController::class, 'login'])->name('login');
 Route::get('/artikellist', [HomeController::class, 'artikel_list'])->name('artikel_list');
+Route::get('/help', [HomeController::class, 'help'])->name('help');
 Route::get('/stat', [HomeController::class, 'stat'])->name('stat');
 
 // Artikel

@@ -11,10 +11,16 @@
              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                  <ul class="navbar-nav menu-navbar-nav">
                      <li class="nav-item">
-                         <a class="nav-link active" aria-current="page" href="{{route('artikel_list')}}">Artikel</a>
-                     </li>
-                     <li class="nav-item">
                          <a class="nav-link" href="{{route('about')}}">Tentang Kami</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Resource
+                         </a>
+                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <li><a class="dropdown-item" href="{{route('artikel_list')}}">Artikel</a></li>
+                             <li><a class="dropdown-item" href="#">Kalkulator Biometrik</a></li>
+                         </ul>
                      </li>
                      <li class="nav-item">
                          <a class="nav-link" href="{{route('contact')}}">Kontak</a>
@@ -29,8 +35,8 @@
              </div>
          </div>
      </nav>
-     <div class="bg-success text-white py-2 text-center">
-         <small>Hubungi Kami di Nomor +62 811-8878-977</small>
+     <div class="bg-success text-white py-2 text-center fixed-top">
+         <small>Hubungi Kami di Nomor +62 8888 9999</small>
      </div>
  </header>
  <!-- Navbar Section exit -->

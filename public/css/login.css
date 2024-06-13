@@ -155,6 +155,7 @@ p {
   padding: 0.9375rem 0;
   background-color: transparent;
   transition: 0.3s ease-in-out;
+  margin-top: 30px;
 }
 .header_wrapper .navbar-toggler,
 .header_wrapper .navbar-toggler:focus {
@@ -236,18 +237,25 @@ p {
 .footer_wrapper {
   background-color: var(--bg-light-blue);
   padding-bottom: 0;
+
 }
+.footer_wrapper .heading input {
+  width: 50%;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
 .footer_wrapper h5 {
   color: var(--text-white);
 }
 .footer_wrapper .contact-info ul a {
   padding: 0;
 }
-
 .footer_wrapper ul li {
   margin-bottom: 0.5rem;
   list-style: none;
-  font-size: 0.875rem;
+  font-size: 1.875rem;
 }
 .footer_wrapper ul li a {
   color: var(--text-white);
@@ -255,7 +263,7 @@ p {
 .footer_wrapper ul li a,
 .footer_wrapper p {
   color: var(--text-white);
-  font-size: 0.875rem;
+  font-size: .875rem;
   padding-left: 1.5rem;
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
@@ -313,12 +321,12 @@ p {
   font-weight: 600;
 }
 
-.footer_wrapper .form-group .main-btn {
+.footer_wrapper .heading .main-btn {
   background-color: var(--bg-green);
   border-color: var(--bg-light-blue);
   color: var(--text-white);
 }
-.footer_wrapper .form-group .main-btn:hover {
+.footer_wrapper .heading .main-btn:hover {
   background-color: var(--bg-white);
   border-color: var(--bg-white);
   color: var(--text-black);

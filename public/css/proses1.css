@@ -127,7 +127,7 @@ p {
   line-height: 1.625rem;
 }
 .card {
-  border-radius: 0.625rem;
+  border-radius: 1.625rem;
   background-color: var(--bg-white);
   box-shadow: 0.5084rem 1.1419rem 2.5rem 0 rgb(0 0 0 / 8%);
   padding: 3.75rem 3.125rem 4.6875rem;
@@ -191,47 +191,71 @@ p {
   transition: 0.3s ease-in-out;
 }
 
-/* Regis */
-.main {
-  background-color: var(--bg-white);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 75px 0px;
-}
-.form-box {
-  background-color: #e4ecf5;
-  backdrop-filter: blur(30px);
-  border-radius: 20px;
-  border: 1px solid var(--bg-white);
-}
-.form-box input {
-  border-radius: 10px;
-}
-.form-box input:focus {
-  box-shadow: 0 0 0;
-  border: 1px solid var(--bg-light-blue);
-}
-.form-box select {
-  border-radius: 10px;
-}
-.form-box select:focus {
-  box-shadow: 0 0 0;
-  border: 1px solid var(--bg-light-blue);
-}
-.input-group-text {
-  border-radius: 0px 10px 10px 0px;
-}
-.register-btn {
-  background-color: var(--bg-light-blue);
-  border: none;
-  border-radius: 10px;
-  color: var(--text-white);
-}
-.main .container img {
-    max-width: 50%;
-}
-/* Footer */.footer_wrapper {
+/* card */
+.container-table {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--bg-light-blue);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table {
+    margin-bottom: 20px;
+  }
+  
+  .table-striped tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  th, td {
+    text-align: center;
+  }
+  
+  th {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  .btn {
+    margin: 5px;
+  }
+  /* searchbar */
+ .height {
+    height: 20vh;
+ }
+ .form {
+    position: relative;
+ }
+ .form .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #9ca3af;
+ }
+ .form-input {
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+ }
+ .form-input:focus {
+    box-shadow: none;
+    border: none;
+ }
+
+
+/* Footer */
+.footer_wrapper {
   background-color: var(--bg-light-blue);
   padding-bottom: 0;
   margin-top: 10px;
