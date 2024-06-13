@@ -84,6 +84,13 @@ return [
                 'log',
             ],
         ],
+
+        'mailers' => [
+            'mailjet' => [
+                'transport' => 'mailjet',
+            ],
+        ],
+
     ],
 
     /*

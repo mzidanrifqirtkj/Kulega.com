@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisterController;
-
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +30,10 @@ Route::get('/stat', [HomeController::class, 'stat'])->name('stat');
 
 // Artikel
 Route::get('/artikel1', [ArtikelController::class, 'artikel1'])->name('artikel1');
+
+// Contact
+// Route::get('/', [ContactController::class, 'mailForm']);
+// Route::post('/contact', [ContactController::class, 'sendEmail'])->name('sendEmail');
 
 // auth sementara
 Route::get('/beta-registration', [RegisterController::class, 'beta_regis'])->name('beta-registrasi');

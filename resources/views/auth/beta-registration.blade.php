@@ -102,18 +102,29 @@
                                 <strong>{{ $message }}</strong>
                             </span>
                             @enderror
-                            <button type="submit" class="register-btn form-control mb-3">Daftar</button>
-                            <div>
-                                <label class="text-center">
-                                    <small>
-                                        Dengan mengisi formulir ini, Anda juga menyetujui <a href="#"><b>Syarat & Ketentuan</b></a> kami serta <a href="#"><b>Kebijakan Privasi</b></a> kami.
-                                    </small>
-                                </label>
-                            </div>
-                        </form>
+                    </div> --}}
+
+                    <div class="form-group form-control">
+                        <textarea name="alasan" id="alasan" cols="40" rows="3" @error('alasan') is-invalid @enderror placeholder="  Alasan Registrasi (Opsional)"></textarea>
+                        @error('alasan')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
                     </div>
+
+                    <button type="submit" class="register-btn form-control mb-3 btn btn-primary">Daftar</button>
+                    <div>
+                        <label class="text-center">
+                            <small>
+                                Dengan mengisi formulir ini, Anda juga menyetujui <a href="#"><b>Syarat & Ketentuan</b></a> kami serta <a href="#"><b>Kebijakan Privasi</b></a> kami.
+                            </small>
+                        </label>
+                    </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
 </section>
 @endsection
