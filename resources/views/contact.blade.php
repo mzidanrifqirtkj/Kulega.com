@@ -43,7 +43,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-10 col-sm-12">
                 <div class="form-box px-5 py-4">
-                    <form>
+                    <form action="{{ route('sendEmail') }}" method="POST">
+                        @csrf
                         <h2 class="text-center mb-4">Bicara Dengan Kita</h2>
                         <p class="text-center mb-4"><small>Tim Support kita aktif pada hari kerja biasa, Senin - Jumat, dari jam 09:00 hingga 17:00 WIB. Jika Anda menghubungi kami di luar jam tersebut, pesan Anda akan diterima dan diproses secepat mungkin pada hari kerja berikutnya.</small></p>
                         <input type="text" name="name" placeholder="Nama" class="form-control mb-3">

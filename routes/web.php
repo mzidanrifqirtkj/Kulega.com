@@ -33,7 +33,7 @@ Route::get('/artikel1', [ArtikelController::class, 'artikel1'])->name('artikel1'
 
 // Contact
 // Route::get('/', [ContactController::class, 'mailForm']);
-// Route::post('/contact', [ContactController::class, 'sendEmail'])->name('sendEmail');
+Route::post('/contact', [ContactController::class, 'sendEmail'])->name('sendEmail');
 
 // auth sementara
 Route::get('/beta-registration', [RegisterController::class, 'beta_regis'])->name('beta-registrasi');
