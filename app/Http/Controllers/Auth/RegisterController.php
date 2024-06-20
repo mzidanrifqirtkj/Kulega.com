@@ -10,28 +10,28 @@ use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
-    public function showRegister()
-    {
-        return view('auth.regis');
-    }
+    // public function showRegister()
+    // {
+    //     return view('auth.regis');
+    // }
 
-    public function register(Request $request)
-    {
-        $validatedData = $request->validate([
-            'company_name' => 'required|string|max:255',
-            'pic_name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'no_hp' => 'required|string|max:15',
-            'jml_karyawan' => 'required|integer',
-            'password' => 'required|string|min:8|confirmed',
-        ]);
+    // public function register(Request $request)
+    // {
+    //     $validatedData = $request->validate([
+    //         'company_name' => 'required|string|max:255',
+    //         'pic_name' => 'required|string|max:255',
+    //         'email' => 'required|string|email|max:255|unique:users',
+    //         'no_hp' => 'required|string|max:15',
+    //         'jml_karyawan' => 'required|integer',
+    //         'password' => 'required|string|min:8|confirmed',
+    //     ]);
 
-        $validatedData['password'] = Hash::make($validatedData['password']);
+    //     $validatedData['password'] = Hash::make($validatedData['password']);
 
-        User::create($validatedData);
+    //     User::create($validatedData);
 
-        return redirect()->route('index')->with('success', 'Registrasi berhasil! Silakan masuk dengan akun Anda.');
-    }
+    //     return redirect()->route('index')->with('success', 'Registrasi berhasil! Silakan masuk dengan akun Anda.');
+    // }
 
     public function regis()
     {

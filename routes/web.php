@@ -41,7 +41,7 @@ Route::get('/artikel1', [ArtikelController::class, 'artikel1'])->name('artikel1'
 Route::post('/contact', [ContactController::class, 'sendEmail'])->name('sendEmail');
 
 // auth sementara
-Route::get('/registrasi', [RegisterController::class, 'regis'])->name('registrasi');
+Route::get('/registrasi', [RegisterController::class, 'regis'])->name('regis');
 Route::post('/registrasi', [RegisterController::class, 'registrasi'])->name('registrasi');
 Route::get('/success', [RegisterController::class, 'success_input'])->name('success');
 

@@ -29,7 +29,7 @@
                          <a class="nav-link" href="{{route('contact')}}">Kontak</a>
                      </li>
                      <li class="nav-item">
-                         <a href="{{route('registrasi')}}" class="btn btn-primary btn-sm">Coba Kulega Sekarang</a>
+                         <a href="{{route('regis')}}" class="btn btn-primary btn-sm">Coba Kulega Sekarang</a>
                      </li>
                  </ul>
              </div>
