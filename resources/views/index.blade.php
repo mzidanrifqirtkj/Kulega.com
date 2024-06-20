@@ -16,7 +16,7 @@
                 <div class="col-md-6 order-md-1 order-2">
                     <h1>Solusi Kesehatan Mental Anda</h1>
                     <p>Dapatkan akses ke tes kesehatan mental dan berbagai layanan lainnya yang dirancang khusus untuk mendukung kesehatan mental Anda. Mulailah perjalanan menuju kesejahteraan mental Anda bersama Kulega hari ini!</p>
-                    <a href="{{route('beta-registrasi')}}" class="main-btn mt-4  fill-btn">Mulai sekarang</a>
+                    <a href="{{route('registrasi')}}" class="main-btn mt-4  fill-btn">Mulai sekarang</a>
                 </div>
                 <div class="col-md-6 order-md-2 order-1 mb-md-0 mb-5">
                     <div class="top-right-sec">

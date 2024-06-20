@@ -187,7 +187,7 @@ return [
         // Mailjet\LaravelMailjet\MailjetMailjetServiceProvider::class,
         // \Mailjet\LaravelMailjet\Providers\ContactsServiceProvider::class,
         // Mailjet\LaravelMailjet\MailjetMailServiceProvider::class,
-
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 
         /*
          * Package Service Providers...

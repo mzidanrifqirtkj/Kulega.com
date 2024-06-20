@@ -74,7 +74,7 @@
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong><a href="">Registrasi</a></strong>
+                                <strong><a href="{{route('registrasi')}}">Registrasi</a></strong>
                                 <br>
                                 <br>
                                 <strong><a href="">Informasi Akun</a></strong>
@@ -118,17 +118,33 @@
             </div>
             <div class="col-md-6">
                 <h5>Apa itu Kulega?</h5>
-                <p><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quis nam neque ea ullam laboriosam reiciendis, numquam odit! Officia eius magni culpa aliquam consectetur dolor cumque reiciendis beatae quisquam recusandae!</small></p>
+                <p><small> Kulega adalah inovasi terdepan dalam layanan kesehatan mental, menyediakan platform yang mengintegrasikan teknologi dan keahlian untuk mendukung kesejahteraan mental dan peningkatan performa kerja.</small></p>
+                <h5>Siapa yang bisa menggunakan Kulega?
+                </h5>
+                <p><small>Kulega dirancang untuk semua orang yang berkeinginan untuk menjaga kesehatan mental, termasuk karyawan dan manajemen perusahaan yang ingin menciptakan lingkungan kerja yang mendukung kesehatan mental. </small></p>
                 <h5>Bagaimana cara kerja Kulega?</h5>
-                <p><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quis nam neque ea ullam laboriosam reiciendis, numquam odit! Officia eius magni culpa aliquam consectetur dolor cumque reiciendis beatae quisquam recusandae!</small></p>
+                <p><small>Dengan antarmuka yang ramah pengguna, Kulega menyediakan akses ke konsultasi profesional, alat penilaian kesehatan mental, dan sumber daya edukatif melalui platform digital yang mudah diakses.</small></p>
+                <h5>Apakah layanan Kulega tersedia setiap saat?</h5>
+                <p><small> Layanan Kulega tersedia 24/7, memastikan dukungan kesehatan mental yang dapat diandalkan setiap saat untuk membantu Anda menghadapi tantangan sehari-hari.
+                    </small></p>
                 <h5>Apakah layanan Kulega tersedia setiap saat?</h5>
                 <p><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quis nam neque ea ullam laboriosam reiciendis, numquam odit! Officia eius magni culpa aliquam consectetur dolor cumque reiciendis beatae quisquam recusandae!</small></p>
-                <h5>Apakah layanan Kulega tersedia setiap saat?</h5>
-                <p><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quis nam neque ea ullam laboriosam reiciendis, numquam odit! Officia eius magni culpa aliquam consectetur dolor cumque reiciendis beatae quisquam recusandae!</small></p>
-                <h5>Apakah layanan Kulega tersedia setiap saat?</h5>
-                <p><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quis nam neque ea ullam laboriosam reiciendis, numquam odit! Officia eius magni culpa aliquam consectetur dolor cumque reiciendis beatae quisquam recusandae!</small></p>
-                <h5>Apakah layanan Kulega tersedia setiap saat?</h5>
-                <p><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quis nam neque ea ullam laboriosam reiciendis, numquam odit! Officia eius magni culpa aliquam consectetur dolor cumque reiciendis beatae quisquam recusandae!</small></p>
+                <h5>Bagaimana Kulega menjaga privasi dan kerahasiaan saya?
+                </h5>
+                <p><small>Kulega menerapkan standar keamanan data yang tinggi, termasuk enkripsi canggih dan kebijakan privasi yang ketat, untuk melindungi informasi pribadi dan kesehatan mental Anda.
+                    </small></p>
+                <h5>Apakah Kulega bekerja sama dengan profesional kesehatan mental yang bersertifikasi?
+                </h5>
+                <p><small>Kulega bermitra hanya dengan profesional kesehatan mental yang bersertifikasi dan berpengalaman untuk menjamin kualitas layanan yang Anda terima.
+                    </small></p>
+                <h5>Bagaimana cara bergabung dengan komunitas Kulega?
+                </h5>
+                <p><small>Anda dapat dengan mudah bergabung dengan komunitas Kulega melalui situs web atau aplikasi kami, di mana Anda akan menemukan ruang aman untuk berbagi pengalaman dan mendapatkan dukungan.
+                    </small></p>
+                <h5>Apakah ada biaya untuk menggunakan layanan Kulega?
+                </h5>
+                <p><small>Kulega menawarkan paket layanan gratis dengan opsi untuk meningkatkan ke layanan premium, yang memberikan fitur tambahan dan akses eksklusif ke sumber daya kesehatan mental.
+                    </small></p>
             </div>
         </div>
     </div>

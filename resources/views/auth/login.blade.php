@@ -18,7 +18,7 @@
                 <div class="form-box px-5 py-4">
                     <form>
                         <h2 class="text-center mb-4">Masuk Untuk Akses Akun Anda</h2>
-                        <p class="text-center mb-4">Belum terdaftar? <a href="{{route('beta-registrasi')}}"><b>Masuk ke Halaman Register</b></a></p>
+                        <p class="text-center mb-4">Belum terdaftar? <a href="{{route('registrasi')}}"><b>Masuk ke Halaman Register</b></a></p>
                         <input type="email" name="" placeholder="Masukkan email Anda" class="form-control mb-3">
                         <div class="input-group mb-3">
                             <input type="password" name="" placeholder="Masukkan kata sandi Anda" class="form-control border-end-0">
@@ -26,7 +26,7 @@
                         </div>
                         <button class="register-btn form-control mb-3">Masuk</button>
                         <div>
-                            <label><small><a href="#"><b>Lupa dengan kata sandi Anda?</b></a></small></label>
+                            <label><small><a href="{{url('lupa_password')}}"><b>Lupa dengan kata sandi Anda?</b></a></small></label>
                         </div>
 
                     </form>

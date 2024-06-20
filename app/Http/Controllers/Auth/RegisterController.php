@@ -33,15 +33,15 @@ class RegisterController extends Controller
         return redirect()->route('index')->with('success', 'Registrasi berhasil! Silakan masuk dengan akun Anda.');
     }
 
-    public function beta_regis()
+    public function regis()
     {
         $data = [
             'title' => 'Registrasi',
         ];
-        return view('auth.beta-registration', $data);
+        return view('auth.registrasi', $data);
     }
 
-    public function beta_registrasi(Request $request)
+    public function registrasi(Request $request)
     {
         $validatedData = $request->validate([
             'company_name' => 'required|string|max:255',
@@ -78,8 +78,7 @@ class RegisterController extends Controller
             // Handle potential errors such as database errors
             return redirect()->back()->with('error', 'Terjadi kesalahan saat menyimpan data: ' . $e->getMessage());
         }
-        // $message = "Selamat, perusahaan anda terdaftar sebagai calon akses beta ke #{$user['id']}"; // Pesan yang ingin dikirim
-        // Simpan ID pengguna ke dalam sesi
+
         session()->flash('id', $user->id);
 
         return redirect()->route('success')->with('success', 'Registrasi berhasil! Silakan masuk dengan akun Anda.');
@@ -93,7 +92,7 @@ class RegisterController extends Controller
         return view('auth.success', $data);
         // $user = User::all();
         // // Nomor dan pesan WhatsApp
-        // $message = "Selamat, perusahaan anda terdaftar sebagai calon akses beta ke #{$user['id']}"; // Pesan yang ingin dikirim
+
         // session()->flash('success', $message);
 
         // $phone = '6287713410112'; // Ganti dengan nomor WhatsApp tujuan

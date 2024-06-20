@@ -92,11 +92,4 @@ class HomeController extends Controller
 
         return view('stat', $data);
     }
-
-
-
-    // public function beta_regis()
-    // {
-    //     return view('beta-registration');
-    // }
 }

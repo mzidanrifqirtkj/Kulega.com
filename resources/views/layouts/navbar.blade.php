@@ -29,14 +29,14 @@
                          <a class="nav-link" href="{{route('contact')}}">Kontak</a>
                      </li>
                      <li class="nav-item">
-                         <a href="{{route('beta_registrasi')}}" class="btn btn-primary btn-sm">Coba Kulega Sekarang</a>
+                         <a href="{{route('registrasi')}}" class="btn btn-primary btn-sm">Coba Kulega Sekarang</a>
                      </li>
                  </ul>
              </div>
          </div>
      </nav>
      <div class="bg-success text-white py-2 text-center fixed-top">
-         <small>Hubungi Kami di Nomor +62 8888 9999</small>
+         <small>Hubungi Kami di Nomor +628118878977</small>
      </div>
  </header>
  <!-- Navbar Section exit -->
