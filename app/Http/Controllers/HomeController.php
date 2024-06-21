@@ -92,4 +92,35 @@ class HomeController extends Controller
 
         return view('stat', $data);
     }
+
+    public function ekspertis()
+    {
+        $data = [
+            'title' => 'Ekspertis',
+        ];
+        return view('expertise', $data);
+    }
+
+    public function edit($id)
+    {
+        $record = User::find($id);
+        return response()->json($record);
+    }
+
+    public function update(Request $request)
+    {
+        $record = User::find($request->id);
+        $record->pic_name = $request->pic_name;
+        $record->industri = $request->industri;
+        $record->email = $request->email;
+        $record->save();
+        return response()->json(['success' => true]);
+    }
+
+    public function destroy($id)
+    {
+        $record = User::find($id);
+        $record->delete();
+        return response()->json(['success' => true]);
+    }
 }

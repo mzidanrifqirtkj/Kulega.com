@@ -30,6 +30,10 @@ Route::get('/login', [HomeController::class, 'login'])->name('login');
 Route::get('/artikellist', [HomeController::class, 'artikel_list'])->name('artikel_list');
 Route::get('/help', [HomeController::class, 'help'])->name('help');
 Route::get('/stat', [HomeController::class, 'stat'])->name('stat');
+Route::get('/stat/{id}/edit', [HomeController::class, 'edit']);
+Route::put('/stat/{id}', [HomeController::class, 'update'])->name('update');;
+Route::delete('/stat/{id}', [HomeController::class, 'destroy'])->name('destroy');
+Route::get('/ekspertis', [HomeController::class, 'ekspertis'])->name('ekspertis');
 
 Route::get('/lupa_password', [LoginController::class, 'lupa_password'])->name('lupaPassword');
 Route::post('/lupa_password', [LoginController::class, 'proses_lupa_password'])->name('prosesLupaPassword');

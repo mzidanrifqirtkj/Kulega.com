@@ -97,6 +97,38 @@
 
     </script>
     <!-- End Google Tag Manager -->
-    @stack('script')
+
+    @push('script')
+    <script>
+        $(document).ready(function() {
+            $('#y_dataTables').DataTable({
+                processing: true
+                , serverSide: true
+                , ajax: "{{ route('stat') }}"
+                , columns: [{
+                        data: 'id'
+                        , name: 'id'
+                    }
+                    , {
+                        data: 'pic_name'
+                        , name: 'pic_name'
+                    }, {
+                        data: 'industri'
+                        , name: 'industri'
+                    }
+                    , {
+                        data: 'email'
+                        , name: 'email'
+                    }
+                    , {
+                        data: 'created_at'
+                        , name: 'created_at'
+                    }
+                ]
+            });
+        });
+
+    </script>
+
 </body>
 </html>

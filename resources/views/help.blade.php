@@ -29,7 +29,7 @@
         <div class="card p-0 border-0 rounded-0">
             <img src="images/q1.png" class="mb-4">
             <div class="card-content">
-                <h2 class="text-center"><a href="" class="text-white">Ekspertis</a></h2>
+                <h2 class="text-center"><a href="{{url('ekspertis')}}" class="text-white">Ekspertis</a></h2>
             </div>
         </div>
         <div class="card p-0 border-0 rounded-0">
