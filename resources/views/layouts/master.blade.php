@@ -44,6 +44,7 @@
     </script>
     <!-- End Google Tag Manager -->
     {{-- @include('layouts.metatag') --}}
+
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
     <!-- Google Tag Manager (noscript) -->
@@ -96,6 +97,6 @@
 
     </script>
     <!-- End Google Tag Manager -->
-
+    @stack('script')
 </body>
 </html>
