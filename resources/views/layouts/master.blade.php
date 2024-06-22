@@ -18,6 +18,7 @@
     <!-- Favicon -->
     <link rel="icon" type="" href="images/favicon/favicon.png">
 
+
     <!-- Bootstrap 5 CDN Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -44,6 +45,7 @@
     </script>
     <!-- End Google Tag Manager -->
     {{-- @include('layouts.metatag') --}}
+    @vite('resources/js/app.js')
 
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
@@ -98,37 +100,8 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    @push('script')
-    <script>
-        $(document).ready(function() {
-            $('#y_dataTables').DataTable({
-                processing: true
-                , serverSide: true
-                , ajax: "{{ route('stat') }}"
-                , columns: [{
-                        data: 'id'
-                        , name: 'id'
-                    }
-                    , {
-                        data: 'pic_name'
-                        , name: 'pic_name'
-                    }, {
-                        data: 'industri'
-                        , name: 'industri'
-                    }
-                    , {
-                        data: 'email'
-                        , name: 'email'
-                    }
-                    , {
-                        data: 'created_at'
-                        , name: 'created_at'
-                    }
-                ]
-            });
-        });
 
-    </script>
 
+    @stack('script')
 </body>
 </html>

@@ -10,8 +10,10 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
     <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
 </head>
 <body>
+
     <div class="container">
         <div class="row">
             <div class="col-sm-12 mt-4 mb-4">
