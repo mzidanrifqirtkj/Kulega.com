@@ -45,7 +45,7 @@
     </script>
     <!-- End Google Tag Manager -->
     {{-- @include('layouts.metatag') --}}
-    @vite('resources/js/app.js')
+    {{-- @vite('resources/js/app.js') --}}
 
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
