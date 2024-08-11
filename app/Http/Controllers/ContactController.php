@@ -20,7 +20,7 @@ class ContactController extends Controller
         $topic = $request->input('topic');
         $messages = $request->input('message');
 
-        Mail::to('mzidanrifqirtkj@gmail.com')->send(new SendEmail($name, $email, $phone, $topic, $messages));
+        Mail::to('#')->send(new SendEmail($name, $email, $phone, $topic, $messages));
 
         return "Email has been sent successfully!";
         //     $input = $request->all();
